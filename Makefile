@@ -14,6 +14,10 @@ help:
 # </makefile>
 
 
+port=8021
+server=localhost
+
+
 ## <refdata>
 deploy_refdata: ## Creates reference data by POSTing it to the server
 	curl -X POST http://$(server):$(port)/catchments -d @catchments.json -H "Content-Type: application/json"
