@@ -28,7 +28,7 @@ deploy_refdata: ## Creates reference data by POSTing it to the server
 ## <package>
 build_package: ## Builds a deployable package
 	rm -rf output/impl
-	mkdir output/impl
+	mkdir -p output/impl
 	cp registrationForm.json catchments.json deploy.sh output/impl
 	cd output/impl && tar zcvf ../openchs_impl.tar.gz *.*
 ## </package>
