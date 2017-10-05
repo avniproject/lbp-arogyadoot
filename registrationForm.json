@@ -176,7 +176,7 @@
           "keyValues": [
             {
               "key": "Select",
-              "value": "Single"
+              "value": "Multi"
             }
           ],
           "dataType": "Coded",
