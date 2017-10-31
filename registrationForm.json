@@ -14,7 +14,11 @@
           "name": "Husband/Spouse/Guardian Name",
           "uuid": "34397241-8529-45c0-94c2-de523d052002",
           "keyValues": [],
-          "dataType": "Text",
+          "concept": {
+            "name": "Husband/Spouse/Guardian Name",
+            "uuid": "33e4c465-b7ca-45bb-a0be-23bfd656ea74",
+            "dataType": "Text"
+          },
           "displayOrder": 1,
           "mandatory": false
         },
@@ -22,7 +26,11 @@
           "name": "Number of Members in House",
           "uuid": "ba602a8e-69d2-49d2-960c-3f130d616686",
           "keyValues": [],
-          "dataType": "Numeric",
+          "concept": {
+            "name": "Number of Members in House",
+            "uuid": "5190dbda-3ae4-49a1-90b3-c34834a973bc",
+            "dataType": "Numeric"
+          },
           "displayOrder": 2,
           "mandatory": false
         }
@@ -43,42 +51,46 @@
               "value": "Single"
             }
           ],
-          "dataType": "Coded",
+          "concept": {
+            "name": "Education",
+            "uuid": "39595a16-a9c6-49a5-a42b-3f462607058c",
+            "dataType": "Coded",
+            "answers": [
+              {
+                "name": "Literate without schooling",
+                "uuid": "0225b18a-28be-405b-9f4c-31211e44a765"
+              },
+              {
+                "name": "8-10",
+                "uuid": "7d9bc65d-579a-41fa-9fe7-760066718688"
+              },
+              {
+                "name": "Graduations",
+                "uuid": "826cd288-57b7-492a-8100-ba4b1dd51f10"
+              },
+              {
+                "name": "Post Graduation and above",
+                "uuid": "fc93ab1d-9b06-434b-b9c5-59497cc754b1"
+              },
+              {
+                "name": "Illiterate",
+                "uuid": "e7116c89-7fc5-406c-b2ab-c022fd84fb1a"
+              },
+              {
+                "name": "1-5",
+                "uuid": "2c9e97a7-93dc-42da-8a15-904eb2aa955b"
+              },
+              {
+                "name": "6-7",
+                "uuid": "8be7e045-c0db-4620-b669-7b9e3ae40736"
+              },
+              {
+                "name": "11-12",
+                "uuid": "72e29d86-d6f3-4e61-a6c4-a62428a72ed6"
+              }
+            ]
+          },
           "displayOrder": 1,
-          "answers": [
-            {
-              "uuid": "e7116c89-7fc5-406c-b2ab-c022fd84fb1a",
-              "name": "Illiterate"
-            },
-            {
-              "uuid": "0225b18a-28be-405b-9f4c-31211e44a765",
-              "name": "Literate without schooling"
-            },
-            {
-              "uuid": "2c9e97a7-93dc-42da-8a15-904eb2aa955b",
-              "name": "1-5"
-            },
-            {
-              "uuid": "8be7e045-c0db-4620-b669-7b9e3ae40736",
-              "name": "6-7"
-            },
-            {
-              "uuid": "7d9bc65d-579a-41fa-9fe7-760066718688",
-              "name": "8-10"
-            },
-            {
-              "uuid": "72e29d86-d6f3-4e61-a6c4-a62428a72ed6",
-              "name": "11-12"
-            },
-            {
-              "uuid": "826cd288-57b7-492a-8100-ba4b1dd51f10",
-              "name": "Graduations"
-            },
-            {
-              "uuid": "fc93ab1d-9b06-434b-b9c5-59497cc754b1",
-              "name": "Post Graduation and above"
-            }
-          ],
           "mandatory": false
         },
         {
@@ -90,34 +102,38 @@
               "value": "Single"
             }
           ],
-          "dataType": "Coded",
+          "concept": {
+            "name": "Religion",
+            "uuid": "c922c13c-1fa2-42dd-a7e8-d234b0324870",
+            "dataType": "Coded",
+            "answers": [
+              {
+                "name": "Muslim",
+                "uuid": "2e41ff7c-13ad-4bb3-964a-29f098691a7d"
+              },
+              {
+                "name": "Christian",
+                "uuid": "48daa405-dcdb-4706-9dbd-a54562012331"
+              },
+              {
+                "name": "Sikh",
+                "uuid": "9e791139-2d68-45b3-81b6-78e8c3ba9662"
+              },
+              {
+                "name": "Jain",
+                "uuid": "1819bf5a-775c-4f28-af9e-650dbc5e0570"
+              },
+              {
+                "name": "Hindu",
+                "uuid": "5f1f8a86-478b-4e7b-ae5e-ac7b207e65b8"
+              },
+              {
+                "name": "Other",
+                "uuid": "672dd923-4c7e-432f-9efd-a70293febf0e"
+              }
+            ]
+          },
           "displayOrder": 2,
-          "answers": [
-            {
-              "uuid": "5f1f8a86-478b-4e7b-ae5e-ac7b207e65b8",
-              "name": "Hindu"
-            },
-            {
-              "uuid": "2e41ff7c-13ad-4bb3-964a-29f098691a7d",
-              "name": "Muslim"
-            },
-            {
-              "uuid": "48daa405-dcdb-4706-9dbd-a54562012331",
-              "name": "Christian"
-            },
-            {
-              "uuid": "9e791139-2d68-45b3-81b6-78e8c3ba9662",
-              "name": "Sikh"
-            },
-            {
-              "uuid": "1819bf5a-775c-4f28-af9e-650dbc5e0570",
-              "name": "Jain"
-            },
-            {
-              "uuid": "672dd923-4c7e-432f-9efd-a70293febf0e",
-              "name": "Other"
-            }
-          ],
           "mandatory": false
         },
         {
@@ -129,26 +145,30 @@
               "value": "Single"
             }
           ],
-          "dataType": "Coded",
+          "concept": {
+            "name": "Caste Categories",
+            "uuid": "61ab6413-5c6a-4512-ab6e-7d5cd1439569",
+            "dataType": "Coded",
+            "answers": [
+              {
+                "name": "General",
+                "uuid": "cae99772-b389-4baf-849b-9c7c2b06c951"
+              },
+              {
+                "name": "ST",
+                "uuid": "dd076e03-68ae-4b53-adf6-641c69b9a518"
+              },
+              {
+                "name": "OBC",
+                "uuid": "e92925ed-4a15-40c0-a0a7-a21c965dad48"
+              },
+              {
+                "name": "SC",
+                "uuid": "a3519a96-350e-4da4-90d9-827c0ff15538"
+              }
+            ]
+          },
           "displayOrder": 3,
-          "answers": [
-            {
-              "uuid": "a3519a96-350e-4da4-90d9-827c0ff15538",
-              "name": "SC"
-            },
-            {
-              "uuid": "dd076e03-68ae-4b53-adf6-641c69b9a518",
-              "name": "ST"
-            },
-            {
-              "uuid": "e92925ed-4a15-40c0-a0a7-a21c965dad48",
-              "name": "OBC"
-            },
-            {
-              "uuid": "cae99772-b389-4baf-849b-9c7c2b06c951",
-              "name": "General"
-            }
-          ],
           "mandatory": false
         },
         {
@@ -160,46 +180,50 @@
               "value": "Single"
             }
           ],
-          "dataType": "Coded",
+          "concept": {
+            "name": "Caste",
+            "uuid": "14db87d5-31f9-4e2f-a76d-eea27e2ee04d",
+            "dataType": "Coded",
+            "answers": [
+              {
+                "name": "Gond",
+                "uuid": "9fad61f4-56b4-4ae8-8500-1012fe26eefd"
+              },
+              {
+                "name": "Other caste",
+                "uuid": "9d7e4315-0e3e-4010-a491-c79e5fb1b303"
+              },
+              {
+                "name": "Gowari",
+                "uuid": "19fd73f1-bfae-49c9-a381-129d901653a6"
+              },
+              {
+                "name": "Chambhar",
+                "uuid": "11f4e54b-3579-4d45-9fd5-063a6dc6d63b"
+              },
+              {
+                "name": "Kalar",
+                "uuid": "664e8af0-a5b2-47d7-8f74-68fcfff6722c"
+              },
+              {
+                "name": "Madia",
+                "uuid": "6c94b37a-3dd4-4b7a-a4d6-b6ec3ab81ddd"
+              },
+              {
+                "name": "Bengoli",
+                "uuid": "c7d30689-afa2-4b79-a53b-2423ce134741"
+              },
+              {
+                "name": "Khati",
+                "uuid": "5b7ea11e-a244-4986-a783-9610710cf1c7"
+              },
+              {
+                "name": "Mahar",
+                "uuid": "76316124-7139-4fea-a998-4526c8b5022b"
+              }
+            ]
+          },
           "displayOrder": 4,
-          "answers": [
-            {
-              "uuid": "6c94b37a-3dd4-4b7a-a4d6-b6ec3ab81ddd",
-              "name": "Madia"
-            },
-            {
-              "uuid": "9fad61f4-56b4-4ae8-8500-1012fe26eefd",
-              "name": "Gond"
-            },
-            {
-              "uuid": "664e8af0-a5b2-47d7-8f74-68fcfff6722c",
-              "name": "Kalar"
-            },
-            {
-              "uuid": "5b7ea11e-a244-4986-a783-9610710cf1c7",
-              "name": "Khati"
-            },
-            {
-              "uuid": "76316124-7139-4fea-a998-4526c8b5022b",
-              "name": "Mahar"
-            },
-            {
-              "uuid": "11f4e54b-3579-4d45-9fd5-063a6dc6d63b",
-              "name": "Chambhar"
-            },
-            {
-              "uuid": "c7d30689-afa2-4b79-a53b-2423ce134741",
-              "name": "Bengoli"
-            },
-            {
-              "uuid": "19fd73f1-bfae-49c9-a381-129d901653a6",
-              "name": "Gowari"
-            },
-            {
-              "uuid": "9d7e4315-0e3e-4010-a491-c79e5fb1b303",
-              "name": "Other caste"
-            }
-          ],
           "mandatory": false
         },
         {
@@ -211,22 +235,26 @@
               "value": "Single"
             }
           ],
-          "dataType": "Coded",
+          "concept": {
+            "name": "Economic Status",
+            "uuid": "add96a34-28b6-41ec-8d1b-d3b7e4eb9810",
+            "dataType": "Coded",
+            "answers": [
+              {
+                "name": "Orange Card",
+                "uuid": "0c34051e-0b85-4500-bda9-3a546535a2e3"
+              },
+              {
+                "name": "White Card",
+                "uuid": "fe27e743-351f-47a2-b9cb-ba51df771de7"
+              },
+              {
+                "name": "Yellow Card",
+                "uuid": "60d82d04-3d65-4be1-88c4-176b6f9d2381"
+              }
+            ]
+          },
           "displayOrder": 5,
-          "answers": [
-            {
-              "uuid": "fe27e743-351f-47a2-b9cb-ba51df771de7",
-              "name": "White Card"
-            },
-            {
-              "uuid": "0c34051e-0b85-4500-bda9-3a546535a2e3",
-              "name": "Orange Card"
-            },
-            {
-              "uuid": "60d82d04-3d65-4be1-88c4-176b6f9d2381",
-              "name": "Yellow Card"
-            }
-          ],
           "mandatory": false
         }
       ]
@@ -246,42 +274,46 @@
               "value": "Single"
             }
           ],
-          "dataType": "Coded",
+          "concept": {
+            "name": "Blood group",
+            "uuid": "3493c80a-8af5-40e6-b598-8385c4db2bd7",
+            "dataType": "Coded",
+            "answers": [
+              {
+                "name": "B+",
+                "uuid": "be517796-a3ea-4feb-ae1f-bdf6ef06f22b"
+              },
+              {
+                "name": "AB-",
+                "uuid": "a68bc952-8abc-44d6-a12b-76e8fdbc3ed3"
+              },
+              {
+                "name": "A+",
+                "uuid": "da859a32-2850-4376-8f14-f49392f8e8cb"
+              },
+              {
+                "name": "O-",
+                "uuid": "2870bad6-c36a-4054-84f4-5c2314fe8c23"
+              },
+              {
+                "name": "AB+",
+                "uuid": "3293d4f4-15e9-4fbe-8cad-d966a9a90385"
+              },
+              {
+                "name": "A-",
+                "uuid": "69e4b4dc-be2d-476b-8ea5-567c71f57526"
+              },
+              {
+                "name": "O+",
+                "uuid": "23629c90-8071-47b8-86c8-f060e03b8722"
+              },
+              {
+                "name": "B-",
+                "uuid": "345712f0-1437-490e-a0d0-6ab6f795f2c6"
+              }
+            ]
+          },
           "displayOrder": 1,
-          "answers": [
-            {
-              "uuid": "da859a32-2850-4376-8f14-f49392f8e8cb",
-              "name": "A+"
-            },
-            {
-              "uuid": "69e4b4dc-be2d-476b-8ea5-567c71f57526",
-              "name": "A-"
-            },
-            {
-              "uuid": "be517796-a3ea-4feb-ae1f-bdf6ef06f22b",
-              "name": "B+"
-            },
-            {
-              "uuid": "345712f0-1437-490e-a0d0-6ab6f795f2c6",
-              "name": "B-"
-            },
-            {
-              "uuid": "3293d4f4-15e9-4fbe-8cad-d966a9a90385",
-              "name": "AB+"
-            },
-            {
-              "uuid": "a68bc952-8abc-44d6-a12b-76e8fdbc3ed3",
-              "name": "AB-"
-            },
-            {
-              "uuid": "23629c90-8071-47b8-86c8-f060e03b8722",
-              "name": "O+"
-            },
-            {
-              "uuid": "2870bad6-c36a-4054-84f4-5c2314fe8c23",
-              "name": "O-"
-            }
-          ],
           "mandatory": false
         },
         {
@@ -293,38 +325,42 @@
               "value": "Multi"
             }
           ],
-          "dataType": "Coded",
+          "concept": {
+            "name": "Medical history",
+            "uuid": "2991127b-7064-4027-a030-4a3a8d0e8aa7",
+            "dataType": "Coded",
+            "answers": [
+              {
+                "name": "Diabetes",
+                "uuid": "72b87b1d-da22-4856-ae41-9c34bb8526c3"
+              },
+              {
+                "name": "TB",
+                "uuid": "2dd56787-9c7c-4c2f-866e-d70a5d30be15"
+              },
+              {
+                "name": "Heart-related Diseases",
+                "uuid": "712e683a-337d-49bd-a3d7-f7b0e1b8e22e"
+              },
+              {
+                "name": "Hypertension",
+                "uuid": "96911954-f239-493e-9443-e23cf75e1f28"
+              },
+              {
+                "name": "Nephrotic syndrome",
+                "uuid": "5a798bac-6417-4b36-98c8-13d4380aa69e"
+              },
+              {
+                "name": "Sickle Cell",
+                "uuid": "09e00cb1-5818-483e-91a5-d1b69f2c6b23"
+              },
+              {
+                "name": "Epilepsy",
+                "uuid": "408fdc53-f861-4c8e-acbe-b0020cadcaa0"
+              }
+            ]
+          },
           "displayOrder": 2,
-          "answers": [
-            {
-              "uuid": "96911954-f239-493e-9443-e23cf75e1f28",
-              "name": "Hypertension"
-            },
-            {
-              "uuid": "72b87b1d-da22-4856-ae41-9c34bb8526c3",
-              "name": "Diabetes"
-            },
-            {
-              "uuid": "712e683a-337d-49bd-a3d7-f7b0e1b8e22e",
-              "name": "Heart-related Diseases"
-            },
-            {
-              "uuid": "2dd56787-9c7c-4c2f-866e-d70a5d30be15",
-              "name": "TB"
-            },
-            {
-              "uuid": "09e00cb1-5818-483e-91a5-d1b69f2c6b23",
-              "name": "Sickle Cell"
-            },
-            {
-              "uuid": "408fdc53-f861-4c8e-acbe-b0020cadcaa0",
-              "name": "Epilepsy"
-            },
-            {
-              "uuid": "5a798bac-6417-4b36-98c8-13d4380aa69e",
-              "name": "Nephrotic syndrome"
-            }
-          ],
           "mandatory": false
         }
       ]
