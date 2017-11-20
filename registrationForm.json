@@ -129,7 +129,7 @@
               },
               {
                 "name": "Other",
-                "uuid": "672dd923-4c7e-432f-9efd-a70293febf0e"
+                "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
               }
             ]
           },
@@ -332,11 +332,11 @@
             "answers": [
               {
                 "name": "Diabetes",
-                "uuid": "72b87b1d-da22-4856-ae41-9c34bb8526c3"
+                "uuid": "674f348f-5075-4c85-8bc2-9edfdee27505"
               },
               {
                 "name": "TB",
-                "uuid": "2dd56787-9c7c-4c2f-866e-d70a5d30be15"
+                "uuid": "ca8a5f57-c409-47ad-8acf-921cdd0fc191"
               },
               {
                 "name": "Heart-related Diseases",
@@ -344,7 +344,7 @@
               },
               {
                 "name": "Hypertension",
-                "uuid": "96911954-f239-493e-9443-e23cf75e1f28"
+                "uuid": "998d1bae-05d8-47b9-89b8-0254829f238f"
               },
               {
                 "name": "Nephrotic syndrome",
@@ -356,7 +356,7 @@
               },
               {
                 "name": "Epilepsy",
-                "uuid": "408fdc53-f861-4c8e-acbe-b0020cadcaa0"
+                "uuid": "a34bf7a0-4d55-41fa-855a-0b8094f369f7"
               }
             ]
           },
