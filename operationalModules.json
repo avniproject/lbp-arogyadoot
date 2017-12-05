@@ -1,0 +1,5 @@
+{
+  "organisationName": "dummy",
+  "encounterTypes": ["Outpatient", "Delivery", "Abortion", "Child Default", "ANC", "PNC"],
+  "programs": ["Mother", "Child"]
+}
