@@ -1,5 +1,5 @@
 {
-  "organisationName": "dummy",
+  "organisationName": "lokbiradari_prakalp",
   "encounterTypes": ["Outpatient", "Delivery", "Abortion", "Child Default", "ANC", "PNC"],
   "programs": ["Mother", "Child"]
 }
