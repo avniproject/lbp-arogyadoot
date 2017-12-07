@@ -44,7 +44,7 @@
       "formElements": [
         {
           "name": "Education",
-          "uuid": "9035da14-ec2f-489f-89c8-a776c986d968",
+          "uuid": "cecf6242-5cce-45ca-890d-3f3937627b0d",
           "keyValues": [
             {
               "key": "Select",
@@ -95,7 +95,7 @@
         },
         {
           "name": "Religion",
-          "uuid": "5a913f85-8707-4051-b4e2-009fc1ffa3f9",
+          "uuid": "f22debab-1cc5-4c82-a764-bdb854cd8be0",
           "keyValues": [
             {
               "key": "Select",
@@ -138,7 +138,7 @@
         },
         {
           "name": "Caste Categories",
-          "uuid": "8b8f58d9-0a81-49ff-8310-81118507f81e",
+          "uuid": "4cb03241-8bf1-4cb6-881f-bc5f3a9c57c2",
           "keyValues": [
             {
               "key": "Select",
@@ -173,7 +173,7 @@
         },
         {
           "name": "Caste",
-          "uuid": "f9025528-31a5-4800-a34d-3670f0e612d2",
+          "uuid": "ddc65563-c27d-4ccf-bac6-a9eeb26bbfb4",
           "keyValues": [
             {
               "key": "Select",
@@ -228,7 +228,7 @@
         },
         {
           "name": "Economic Status",
-          "uuid": "162b31fc-5ab5-4aa9-b368-dcc4ba183f93",
+          "uuid": "59be0179-29a1-49e5-ad04-bf67cedcb0b6",
           "keyValues": [
             {
               "key": "Select",
@@ -267,7 +267,7 @@
       "formElements": [
         {
           "name": "Blood group",
-          "uuid": "c0a869e1-8c00-4815-9e40-be3835fb5595",
+          "uuid": "02008c94-fbf9-4b79-b67e-32d0a8ec5f61",
           "keyValues": [
             {
               "key": "Select",
@@ -318,7 +318,7 @@
         },
         {
           "name": "Medical history",
-          "uuid": "3c748287-5529-4412-8cca-f3aa6744ea8b",
+          "uuid": "f935c1e9-a85a-49a5-98e4-c8d82ee2fb21",
           "keyValues": [
             {
               "key": "Select",
