@@ -1,166 +1,207 @@
 [
   {
     "name": "Literate without schooling",
-    "uuid": "0225b18a-28be-405b-9f4c-31211e44a765"
+    "uuid": "0225b18a-28be-405b-9f4c-31211e44a765",
+    "dataType": "NA"
   },
   {
     "name": "8-10",
-    "uuid": "7d9bc65d-579a-41fa-9fe7-760066718688"
+    "uuid": "7d9bc65d-579a-41fa-9fe7-760066718688",
+    "dataType": "NA"
   },
   {
     "name": "Graduations",
-    "uuid": "826cd288-57b7-492a-8100-ba4b1dd51f10"
+    "uuid": "826cd288-57b7-492a-8100-ba4b1dd51f10",
+    "dataType": "NA"
   },
   {
     "name": "Post Graduation and above",
-    "uuid": "fc93ab1d-9b06-434b-b9c5-59497cc754b1"
+    "uuid": "fc93ab1d-9b06-434b-b9c5-59497cc754b1",
+    "dataType": "NA"
   },
   {
     "name": "Illiterate",
-    "uuid": "e7116c89-7fc5-406c-b2ab-c022fd84fb1a"
+    "uuid": "e7116c89-7fc5-406c-b2ab-c022fd84fb1a",
+    "dataType": "NA"
   },
   {
     "name": "1-5",
-    "uuid": "2c9e97a7-93dc-42da-8a15-904eb2aa955b"
+    "uuid": "2c9e97a7-93dc-42da-8a15-904eb2aa955b",
+    "dataType": "NA"
   },
   {
     "name": "6-7",
-    "uuid": "8be7e045-c0db-4620-b669-7b9e3ae40736"
+    "uuid": "8be7e045-c0db-4620-b669-7b9e3ae40736",
+    "dataType": "NA"
   },
   {
     "name": "11-12",
-    "uuid": "72e29d86-d6f3-4e61-a6c4-a62428a72ed6"
+    "uuid": "72e29d86-d6f3-4e61-a6c4-a62428a72ed6",
+    "dataType": "NA"
   },
   {
     "name": "Muslim",
-    "uuid": "2e41ff7c-13ad-4bb3-964a-29f098691a7d"
+    "uuid": "2e41ff7c-13ad-4bb3-964a-29f098691a7d",
+    "dataType": "NA"
   },
   {
     "name": "Christian",
-    "uuid": "48daa405-dcdb-4706-9dbd-a54562012331"
+    "uuid": "48daa405-dcdb-4706-9dbd-a54562012331",
+    "dataType": "NA"
   },
   {
     "name": "Sikh",
-    "uuid": "9e791139-2d68-45b3-81b6-78e8c3ba9662"
+    "uuid": "9e791139-2d68-45b3-81b6-78e8c3ba9662",
+    "dataType": "NA"
   },
   {
     "name": "Jain",
-    "uuid": "1819bf5a-775c-4f28-af9e-650dbc5e0570"
+    "uuid": "1819bf5a-775c-4f28-af9e-650dbc5e0570",
+    "dataType": "NA"
   },
   {
     "name": "Hindu",
-    "uuid": "5f1f8a86-478b-4e7b-ae5e-ac7b207e65b8"
+    "uuid": "5f1f8a86-478b-4e7b-ae5e-ac7b207e65b8",
+    "dataType": "NA"
   },
   {
     "name": "ST",
-    "uuid": "dd076e03-68ae-4b53-adf6-641c69b9a518"
+    "uuid": "dd076e03-68ae-4b53-adf6-641c69b9a518",
+    "dataType": "NA"
   },
   {
     "name": "OBC",
-    "uuid": "e92925ed-4a15-40c0-a0a7-a21c965dad48"
+    "uuid": "e92925ed-4a15-40c0-a0a7-a21c965dad48",
+    "dataType": "NA"
   },
   {
     "name": "SC",
-    "uuid": "a3519a96-350e-4da4-90d9-827c0ff15538"
+    "uuid": "a3519a96-350e-4da4-90d9-827c0ff15538",
+    "dataType": "NA"
   },
   {
     "name": "Gond",
-    "uuid": "9fad61f4-56b4-4ae8-8500-1012fe26eefd"
+    "uuid": "9fad61f4-56b4-4ae8-8500-1012fe26eefd",
+    "dataType": "NA"
   },
   {
     "name": "Other caste",
-    "uuid": "9d7e4315-0e3e-4010-a491-c79e5fb1b303"
+    "uuid": "9d7e4315-0e3e-4010-a491-c79e5fb1b303",
+    "dataType": "NA"
   },
   {
     "name": "Gowari",
-    "uuid": "19fd73f1-bfae-49c9-a381-129d901653a6"
+    "uuid": "19fd73f1-bfae-49c9-a381-129d901653a6",
+    "dataType": "NA"
   },
   {
     "name": "Chambhar",
-    "uuid": "11f4e54b-3579-4d45-9fd5-063a6dc6d63b"
+    "uuid": "11f4e54b-3579-4d45-9fd5-063a6dc6d63b",
+    "dataType": "NA"
   },
   {
     "name": "Kalar",
-    "uuid": "664e8af0-a5b2-47d7-8f74-68fcfff6722c"
+    "uuid": "664e8af0-a5b2-47d7-8f74-68fcfff6722c",
+    "dataType": "NA"
   },
   {
     "name": "Madia",
-    "uuid": "6c94b37a-3dd4-4b7a-a4d6-b6ec3ab81ddd"
+    "uuid": "6c94b37a-3dd4-4b7a-a4d6-b6ec3ab81ddd",
+    "dataType": "NA"
   },
   {
     "name": "Bengoli",
-    "uuid": "c7d30689-afa2-4b79-a53b-2423ce134741"
+    "uuid": "c7d30689-afa2-4b79-a53b-2423ce134741",
+    "dataType": "NA"
   },
   {
     "name": "Khati",
-    "uuid": "5b7ea11e-a244-4986-a783-9610710cf1c7"
+    "uuid": "5b7ea11e-a244-4986-a783-9610710cf1c7",
+    "dataType": "NA"
   },
   {
     "name": "Mahar",
-    "uuid": "76316124-7139-4fea-a998-4526c8b5022b"
+    "uuid": "76316124-7139-4fea-a998-4526c8b5022b",
+    "dataType": "NA"
   },
   {
     "name": "Orange Card",
-    "uuid": "0c34051e-0b85-4500-bda9-3a546535a2e3"
+    "uuid": "0c34051e-0b85-4500-bda9-3a546535a2e3",
+    "dataType": "NA"
   },
   {
     "name": "White Card",
-    "uuid": "fe27e743-351f-47a2-b9cb-ba51df771de7"
+    "uuid": "fe27e743-351f-47a2-b9cb-ba51df771de7",
+    "dataType": "NA"
   },
   {
     "name": "Yellow Card",
-    "uuid": "60d82d04-3d65-4be1-88c4-176b6f9d2381"
+    "uuid": "60d82d04-3d65-4be1-88c4-176b6f9d2381",
+    "dataType": "NA"
   },
   {
     "name": "B+",
-    "uuid": "be517796-a3ea-4feb-ae1f-bdf6ef06f22b"
+    "uuid": "be517796-a3ea-4feb-ae1f-bdf6ef06f22b",
+    "dataType": "NA"
   },
   {
     "name": "AB-",
-    "uuid": "a68bc952-8abc-44d6-a12b-76e8fdbc3ed3"
+    "uuid": "a68bc952-8abc-44d6-a12b-76e8fdbc3ed3",
+    "dataType": "NA"
   },
   {
     "name": "A+",
-    "uuid": "da859a32-2850-4376-8f14-f49392f8e8cb"
+    "uuid": "da859a32-2850-4376-8f14-f49392f8e8cb",
+    "dataType": "NA"
   },
   {
     "name": "O-",
-    "uuid": "2870bad6-c36a-4054-84f4-5c2314fe8c23"
+    "uuid": "2870bad6-c36a-4054-84f4-5c2314fe8c23",
+    "dataType": "NA"
   },
   {
     "name": "AB+",
-    "uuid": "3293d4f4-15e9-4fbe-8cad-d966a9a90385"
+    "uuid": "3293d4f4-15e9-4fbe-8cad-d966a9a90385",
+    "dataType": "NA"
   },
   {
     "name": "A-",
-    "uuid": "69e4b4dc-be2d-476b-8ea5-567c71f57526"
+    "uuid": "69e4b4dc-be2d-476b-8ea5-567c71f57526",
+    "dataType": "NA"
   },
   {
     "name": "O+",
-    "uuid": "23629c90-8071-47b8-86c8-f060e03b8722"
+    "uuid": "23629c90-8071-47b8-86c8-f060e03b8722",
+    "dataType": "NA"
   },
   {
     "name": "B-",
-    "uuid": "345712f0-1437-490e-a0d0-6ab6f795f2c6"
+    "uuid": "345712f0-1437-490e-a0d0-6ab6f795f2c6",
+    "dataType": "NA"
   },
   {
     "name": "Heart-related Diseases",
-    "uuid": "712e683a-337d-49bd-a3d7-f7b0e1b8e22e"
+    "uuid": "712e683a-337d-49bd-a3d7-f7b0e1b8e22e",
+    "dataType": "NA"
   },
   {
     "name": "General",
-    "uuid": "cae99772-b389-4baf-849b-9c7c2b06c951"
+    "uuid": "cae99772-b389-4baf-849b-9c7c2b06c951",
+    "dataType": "NA"
   },
   {
     "name": "ST",
-    "uuid": "dd076e03-68ae-4b53-adf6-641c69b9a518"
+    "uuid": "dd076e03-68ae-4b53-adf6-641c69b9a518",
+    "dataType": "NA"
   },
   {
     "name": "OBC",
-    "uuid": "e92925ed-4a15-40c0-a0a7-a21c965dad48"
+    "uuid": "e92925ed-4a15-40c0-a0a7-a21c965dad48",
+    "dataType": "NA"
   },
   {
     "name": "SC",
-    "uuid": "a3519a96-350e-4da4-90d9-827c0ff15538"
+    "uuid": "a3519a96-350e-4da4-90d9-827c0ff15538",
+    "dataType": "NA"
   }
 ]
