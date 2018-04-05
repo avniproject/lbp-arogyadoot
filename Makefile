@@ -17,9 +17,12 @@ help:
 port=8021
 server=localhost
 su:=$(shell id -un)
+org_name=Lokbiradari Prakalp
 
-create_org:
+## <create_org>
+create_org: ## Create Lokbiradari Prakalp org and user+privileges
 	psql -U$(su) openchs < create_organisation.sql
+## </create_org>
 
 ## <refdata>
 deploy_refdata: ## Creates reference data by POSTing it to the server
@@ -40,3 +43,5 @@ build_package: ## Builds a deployable package
 
 
 deploy: deploy_refdata
+
+create_deploy: create_org deploy_refdata
