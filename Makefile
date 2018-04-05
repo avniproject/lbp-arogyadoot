@@ -19,29 +19,31 @@ server=localhost
 su:=$(shell id -un)
 org_name=Lokbiradari Prakalp
 
-## <create_org>
+# <create_org>
 create_org: ## Create Lokbiradari Prakalp org and user+privileges
 	psql -U$(su) openchs < create_organisation.sql
-## </create_org>
+# </create_org>
 
-## <refdata>
+# <refdata>
 deploy_refdata: ## Creates reference data by POSTing it to the server
 	curl -X POST http://$(server):$(port)/catchments -d @catchments.json -H "Content-Type: application/json" -H "ORGANISATION-NAME: Lokbiradari Prakalp"
 	curl -X POST http://$(server):$(port)/concepts -d @concepts.json -H "Content-Type: application/json" -H "ORGANISATION-NAME: Lokbiradari Prakalp"
 	curl -X POST http://$(server):$(port)/forms -d @registrationForm.json -H "Content-Type: application/json" -H "ORGANISATION-NAME: Lokbiradari Prakalp"
 	curl -X POST http://$(server):$(port)/operationalModules -d @operationalModules.json -H "Content-Type: application/json" -H "ORGANISATION-NAME: Lokbiradari Prakalp"
-## </refdata>
+# </refdata>
 
-
-## <package>
+# <package>
 build_package: ## Builds a deployable package
 	rm -rf output/impl
 	mkdir -p output/impl
 	cp registrationForm.json catchments.json deploy.sh output/impl
 	cd output/impl && tar zcvf ../openchs_impl.tar.gz *.*
-## </package>
+# </package>
 
+# <deploy>
+deploy: deploy_refdata ##  
+# </deploy>
 
-deploy: deploy_refdata
-
-create_deploy: create_org deploy_refdata
+# <c_d>
+create_deploy: create_org deploy_refdata ##  
+# </c_d>
