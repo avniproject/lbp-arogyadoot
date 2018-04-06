@@ -40,31 +40,6 @@
     "dataType": "NA"
   },
   {
-    "name": "Muslim",
-    "uuid": "2e41ff7c-13ad-4bb3-964a-29f098691a7d",
-    "dataType": "NA"
-  },
-  {
-    "name": "Christian",
-    "uuid": "48daa405-dcdb-4706-9dbd-a54562012331",
-    "dataType": "NA"
-  },
-  {
-    "name": "Sikh",
-    "uuid": "9e791139-2d68-45b3-81b6-78e8c3ba9662",
-    "dataType": "NA"
-  },
-  {
-    "name": "Jain",
-    "uuid": "1819bf5a-775c-4f28-af9e-650dbc5e0570",
-    "dataType": "NA"
-  },
-  {
-    "name": "Hindu",
-    "uuid": "5f1f8a86-478b-4e7b-ae5e-ac7b207e65b8",
-    "dataType": "NA"
-  },
-  {
     "name": "ST",
     "uuid": "dd076e03-68ae-4b53-adf6-641c69b9a518",
     "dataType": "NA"
