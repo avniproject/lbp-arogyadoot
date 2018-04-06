@@ -14,8 +14,8 @@ help:
 # </makefile>
 
 
-port=8021
-server=localhost
+#port=8021
+#server=localhost
 su:=$(shell id -un)
 org_name=Lokbiradari Prakalp
 
@@ -26,10 +26,10 @@ create_org: ## Create Lokbiradari Prakalp org and user+privileges
 
 # <refdata>
 deploy_refdata: ## Creates reference data by POSTing it to the server
-	curl -X POST http://$(server):$(port)/catchments -d @catchments.json -H "Content-Type: application/json" -H "ORGANISATION-NAME: Lokbiradari Prakalp"
-	curl -X POST http://$(server):$(port)/concepts -d @concepts.json -H "Content-Type: application/json" -H "ORGANISATION-NAME: Lokbiradari Prakalp"
-	curl -X POST http://$(server):$(port)/forms -d @registrationForm.json -H "Content-Type: application/json" -H "ORGANISATION-NAME: Lokbiradari Prakalp"
-	curl -X POST http://$(server):$(port)/operationalModules -d @operationalModules.json -H "Content-Type: application/json" -H "ORGANISATION-NAME: Lokbiradari Prakalp"
+	curl -X POST $(server):$(port)/catchments -d @catchments.json -H "Content-Type: application/json" -H "ORGANISATION-NAME: Lokbiradari Prakalp" -H "AUTH-TOKEN: $(token)"
+	curl -X POST $(server):$(port)/concepts -d @concepts.json -H "Content-Type: application/json" -H "ORGANISATION-NAME: Lokbiradari Prakalp" -H "AUTH-TOKEN: $(token)"
+	curl -X POST $(server):$(port)/forms -d @registrationForm.json -H "Content-Type: application/json" -H "ORGANISATION-NAME: Lokbiradari Prakalp" -H "AUTH-TOKEN: $(token)"
+	curl -X POST $(server):$(port)/operationalModules -d @operationalModules.json -H "Content-Type: application/json" -H "ORGANISATION-NAME: Lokbiradari Prakalp" -H "AUTH-TOKEN: $(token)"
 # </refdata>
 
 # <package>
