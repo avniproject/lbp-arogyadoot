@@ -13,9 +13,9 @@ help:
 	done
 # </makefile>
 
+port:= $(if $(port),$(port),8021)
+server:= $(if $(server),$(server),http://localhost)
 
-#port=8021
-#server=localhost
 su:=$(shell id -un)
 org_name=Lokbiradari Prakalp
 
