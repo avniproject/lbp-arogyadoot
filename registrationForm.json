@@ -208,6 +208,20 @@
           },
           "displayOrder": 5,
           "mandatory": false
+        },
+        {
+          "name": "Aadhar ID",
+          "uuid": "29d41335-09aa-48e7-a004-6b66f155625e",
+          "keyValues": [],
+          "concept": {
+            "uuid": "43c4860f-fccf-48c9-818a-191bc0f8d0cf"
+          },
+          "validFormat": {
+            "regex": "^[0-9]{12}$",
+            "descriptionKey": "Required12Digits"
+          },
+          "displayOrder": 6,
+          "mandatory": false
         }
       ]
     },
