@@ -178,5 +178,10 @@
     "name": "SC",
     "uuid": "a3519a96-350e-4da4-90d9-827c0ff15538",
     "dataType": "NA"
+  },
+  {
+    "name": "Aadhar Number",
+    "uuid": "c22ede54-ac3f-4f16-9efa-d87179d676e1",
+    "dataType": "Numeric"
   }
 ]

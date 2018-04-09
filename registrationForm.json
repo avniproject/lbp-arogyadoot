@@ -214,7 +214,7 @@
           "uuid": "29d41335-09aa-48e7-a004-6b66f155625e",
           "keyValues": [],
           "concept": {
-            "uuid": "43c4860f-fccf-48c9-818a-191bc0f8d0cf"
+            "uuid": "c22ede54-ac3f-4f16-9efa-d87179d676e1"
           },
           "validFormat": {
             "regex": "^[0-9]{12}$",
