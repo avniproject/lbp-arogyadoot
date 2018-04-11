@@ -53,24 +53,12 @@
             "dataType": "Coded",
             "answers": [
               {
-                "name": "Literate without schooling",
-                "uuid": "0225b18a-28be-405b-9f4c-31211e44a765"
-              },
-              {
-                "name": "8-10",
-                "uuid": "7d9bc65d-579a-41fa-9fe7-760066718688"
-              },
-              {
-                "name": "Graduations",
-                "uuid": "826cd288-57b7-492a-8100-ba4b1dd51f10"
-              },
-              {
-                "name": "Post Graduation and above",
-                "uuid": "fc93ab1d-9b06-434b-b9c5-59497cc754b1"
-              },
-              {
                 "name": "Illiterate",
                 "uuid": "e7116c89-7fc5-406c-b2ab-c022fd84fb1a"
+              },
+              {
+                "name": "Literate without schooling",
+                "uuid": "0225b18a-28be-405b-9f4c-31211e44a765"
               },
               {
                 "name": "1-5",
@@ -81,8 +69,20 @@
                 "uuid": "8be7e045-c0db-4620-b669-7b9e3ae40736"
               },
               {
+                "name": "8-10",
+                "uuid": "7d9bc65d-579a-41fa-9fe7-760066718688"
+              },
+              {
                 "name": "11-12",
                 "uuid": "72e29d86-d6f3-4e61-a6c4-a62428a72ed6"
+              },
+              {
+                "name": "Graduations",
+                "uuid": "826cd288-57b7-492a-8100-ba4b1dd51f10"
+              },
+              {
+                "name": "Post Graduation and above",
+                "uuid": "fc93ab1d-9b06-434b-b9c5-59497cc754b1"
               }
             ]
           },
@@ -242,20 +242,16 @@
             "dataType": "Coded",
             "answers": [
               {
-                "name": "B+",
-                "uuid": "be517796-a3ea-4feb-ae1f-bdf6ef06f22b"
-              },
-              {
-                "name": "AB-",
-                "uuid": "a68bc952-8abc-44d6-a12b-76e8fdbc3ed3"
-              },
-              {
                 "name": "A+",
                 "uuid": "da859a32-2850-4376-8f14-f49392f8e8cb"
               },
               {
-                "name": "O-",
-                "uuid": "2870bad6-c36a-4054-84f4-5c2314fe8c23"
+                "name": "B+",
+                "uuid": "be517796-a3ea-4feb-ae1f-bdf6ef06f22b"
+              },
+              {
+                "name": "O+",
+                "uuid": "23629c90-8071-47b8-86c8-f060e03b8722"
               },
               {
                 "name": "AB+",
@@ -266,12 +262,16 @@
                 "uuid": "69e4b4dc-be2d-476b-8ea5-567c71f57526"
               },
               {
-                "name": "O+",
-                "uuid": "23629c90-8071-47b8-86c8-f060e03b8722"
-              },
-              {
                 "name": "B-",
                 "uuid": "345712f0-1437-490e-a0d0-6ab6f795f2c6"
+              },
+              {
+                "name": "O-",
+                "uuid": "2870bad6-c36a-4054-84f4-5c2314fe8c23"
+              },
+              {
+                "name": "AB-",
+                "uuid": "a68bc952-8abc-44d6-a12b-76e8fdbc3ed3"
               }
             ]
           },
