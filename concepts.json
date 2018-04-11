@@ -183,5 +183,40 @@
     "name": "Aadhar Number",
     "uuid": "c22ede54-ac3f-4f16-9efa-d87179d676e1",
     "dataType": "Numeric"
+  },
+  {
+    "name": "Chewable Tobacco",
+    "uuid": "863618d6-1ffd-4140-ad37-865a3e24359a",
+    "dataType": "NA"
+  },
+  {
+    "name": "Kharra",
+    "uuid": "44baebcd-b597-4165-814c-6e2bbaf8080a",
+    "dataType": "NA"
+  },
+  {
+    "name": "Guthka",
+    "uuid": "76e89bcb-1719-4c57-bec0-56e9266588e8",
+    "dataType": "NA"
+  },
+  {
+    "name": "Bidi or Cigarette",
+    "uuid": "ce3d88cb-781e-413b-9515-8b9c2a13ffb2",
+    "dataType": "NA"
+  },
+  {
+    "name": "Tadi",
+    "uuid": "e97433db-7998-4d26-9a7c-6b38978122ac",
+    "dataType": "NA"
+  },
+  {
+    "name": "Gorga",
+    "uuid": "73fe7454-8589-4544-8919-54559f1074f5",
+    "dataType": "NA"
+  },
+  {
+    "name": "Moha",
+    "uuid": "481457f0-9a04-44bc-9f55-bd3f42ba5db5",
+    "dataType": "NA"
   }
 ]

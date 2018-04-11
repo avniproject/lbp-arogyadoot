@@ -290,6 +290,90 @@
           "mandatory": false
         }
       ]
+    },
+    {
+      "uuid": "7a26007a-e3cc-4bd4-8510-3aa2bf822ca8",
+      "name": "Individual Personal Habits",
+      "displayOrder": 4,
+      "display": "Personal Habits",
+      "formElements": [
+        {
+          "name": "Do you consume any tobacco products?",
+          "uuid": "f4e8b5e0-1483-4542-a8d3-aee66af6c60b",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "Tobacco consumption",
+            "uuid": "3e8b629f-ac0f-4700-b16c-c163db58d8d4",
+            "dataType": "Coded",
+            "answers": [
+              {
+                "name": "Chewable Tobacco",
+                "uuid": "863618d6-1ffd-4140-ad37-865a3e24359a",
+                "abnormal": true
+              },
+              {
+                "name": "Kharra",
+                "uuid": "44baebcd-b597-4165-814c-6e2bbaf8080a",
+                "abnormal": true
+              },
+              {
+                "name": "Guthka",
+                "uuid": "76e89bcb-1719-4c57-bec0-56e9266588e8",
+                "abnormal": true
+              },
+              {
+                "name": "Bidi or Cigarette",
+                "uuid": "ce3d88cb-781e-413b-9515-8b9c2a13ffb2",
+                "abnormal": true
+              },
+              {
+                "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+              }
+            ]
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Do you consume any alcoholic products?",
+          "uuid": "3a1c665e-7467-437f-946a-0f7b699eea6e",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "Alcohol consumption",
+            "uuid": "b1ee68c8-02d6-4e7f-b49f-e45137a8d007",
+            "dataType": "Coded",
+            "answers": [
+              {
+                "name": "Tadi",
+                "uuid": "e97433db-7998-4d26-9a7c-6b38978122ac",
+                "abnormal": true
+              },
+              {
+                "name": "Gorga",
+                "uuid": "73fe7454-8589-4544-8919-54559f1074f5",
+                "abnormal": true
+              },
+              {
+                "name": "Moha",
+                "uuid": "481457f0-9a04-44bc-9f55-bd3f42ba5db5",
+                "abnormal": true
+              },
+              {
+                "name": "Other",
+                "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+                "abnormal": true
+              },
+              {
+                "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+              }
+            ]
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        }
+      ]
     }
   ]
 }
