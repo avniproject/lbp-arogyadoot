@@ -52,12 +52,12 @@
       "display": "TB Complications",
       "formElements": [
         {
-          "name": "Is she on medication?",
+          "name": "Is she on TB medication?",
           "uuid": "be6fad57-fe7e-4bc0-bf36-26a31aec0d78",
           "keyValues": [],
           "type": "SingleSelect",
           "concept": {
-            "name": "Is she on medication?",
+            "name": "Is she on TB medication?",
             "uuid": "b47dca1d-3f42-4280-9b3e-3d68cce88bed",
             "dataType": "Coded",
             "answers": [
