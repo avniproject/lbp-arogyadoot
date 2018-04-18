@@ -1,5 +1,5 @@
 {
   "organisationName": "Lokbiradari Prakalp",
-  "encounterTypes": ["Outpatient", "Delivery", "Abortion", "Child Delivery", "ANC", "PNC"],
+  "encounterTypes": ["Outpatient", "Delivery", "Abortion", "Child Delivery", "ANC", "PNC", "Child Default"],
   "programs": ["Mother", "Child"]
 }
