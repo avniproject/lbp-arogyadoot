@@ -125,7 +125,7 @@
       ]
     },
     {
-      "name": "Midapalli Cluster",
+      "name": "Midadapalli Cluster",
       "uuid": "0e92cb82-c20f-46b4-b4ed-cfc0d7dd263d",
       "type": "Villages",
       "addressLevels": [
@@ -133,7 +133,7 @@
           "uuid": "6ae0a72e-3dfe-436a-bd54-6034a64d136f",
           "level": 1,
           "type": "Village",
-          "name": "Midapalli"
+          "name": "Midadapalli"
         },
         {
           "uuid": "ca6d3ca0-310e-4db6-8031-796010a4336a",
@@ -157,7 +157,7 @@
           "uuid": "808f3d20-1d8c-43ef-8d83-32bfb0e1317f",
           "level": 1,
           "type": "Village",
-          "name": "Other Village (Midapalli)"
+          "name": "Other Village (Midadapalli)"
         }
       ]
     },
