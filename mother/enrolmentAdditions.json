@@ -20,27 +20,28 @@
       ]
     },
     {
-      "uuid": "71b33c6d-e029-43be-baff-452c3e31890d",
+      "uuid": "50a2d045-88fe-44e3-86e0-0dba16f53818",
       "formElements": [
         {
-          "name": "Age of youngest child",
-          "uuid": "d07f9fdc-2dbe-4b21-abce-eb79c30470b8",
+          "name": "Obstetrics history",
+          "uuid": "800fddad-2780-4ea1-9eec-4af35f3f1c54",
           "keyValues": [
             {
-              "key": "durationOptions",
+              "key": "ExcludedAnswers",
               "value": [
-                "days",
-                "weeks",
-                "months"
+                "Breech or transverse presentation [ObstetricHistory]",
+                "Puerperal sepsis",
+                "Post abortion complication",
+                "Rh negative in the previous pregnancy",
+                "Weight of the previous baby less than 2500g or more than 4500g"
               ]
             }
           ],
+          "type": "MultiSelect",
           "concept": {
-            "name": "Age of youngest child",
-            "uuid": "305f693c-c8b6-4e3e-9a82-a6e91a3e462f",
-            "dataType": "Date"
+            "uuid": "8a4ab436-6767-45d5-95d7-075d9459609e"
           },
-          "displayOrder": 5.1,
+          "displayOrder": 1.1,
           "mandatory": true
         }
       ]
