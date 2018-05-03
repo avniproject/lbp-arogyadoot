@@ -1,0 +1,94 @@
+{
+  "visitSchedule": [
+    {
+      "name": "ANC 1",
+      "encounterType": "ANC",
+      "interval": {
+        "from": "lmp",
+        "min": {
+          "unit": "days",
+          "value": 0
+        },
+        "max": {
+          "unit": "weeks",
+          "value": 12
+        }
+      }
+    },
+    {
+      "name": "ANC 2",
+      "encounterType": "ANC",
+      "interval": {
+        "from": "lmp",
+        "min": {
+          "unit": "weeks",
+          "value": 13
+        },
+        "max": {
+          "unit": "weeks",
+          "value": 20
+        }
+      }
+    },
+    {
+      "name": "ANC 3",
+      "encounterType": "ANC",
+      "interval": {
+        "from": "lmp",
+        "min": {
+          "unit": "weeks",
+          "value": 21
+        },
+        "max": {
+          "unit": "weeks",
+          "value": 28
+        }
+      }
+    },
+    {
+      "name": "ANC 4",
+      "encounterType": "ANC",
+      "interval": {
+        "from": "lmp",
+        "min": {
+          "unit": "weeks",
+          "value": 29
+        },
+        "max": {
+          "unit": "weeks",
+          "value": 32
+        }
+      }
+    },
+    {
+      "name": "ANC 5",
+      "encounterType": "ANC",
+      "interval": {
+        "from": "lmp",
+        "min": {
+          "unit": "weeks",
+          "value": 33
+        },
+        "max": {
+          "unit": "weeks",
+          "value": 36
+        }
+      }
+    },
+    {
+      "name": "ANC 6",
+      "encounterType": "ANC",
+      "interval": {
+        "from": "lmp",
+        "min": {
+          "unit": "weeks",
+          "value": 37
+        },
+        "max": {
+          "unit": "weeks",
+          "value": 40
+        }
+      }
+    }
+  ]
+}
