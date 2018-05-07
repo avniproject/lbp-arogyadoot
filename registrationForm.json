@@ -281,7 +281,14 @@
         {
           "name": "Medical history",
           "uuid": "f935c1e9-a85a-49a5-98e4-c8d82ee2fb21",
-          "keyValues": [],
+          "keyValues": [
+            {
+              "key": "ExcludedAnswers",
+              "value": [
+                "Hepatitis B Positive"
+              ]
+            }
+          ],
           "type": "MultiSelect",
           "concept": {
             "uuid": "2991127b-7064-4027-a030-4a3a8d0e8aa7"
