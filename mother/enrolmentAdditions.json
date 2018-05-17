@@ -1,6 +1,6 @@
 {
   "uuid": "026e2f5c-8670-4e4b-9a54-cb03bbf3093d",
-  "userUUID": "5fed2907-df3a-4867-aef5-c87f4c78a31a",
+  "name": "Mother Enrolment",
   "formElementGroups": [
     {
       "uuid": "2dff8c09-bed3-4848-943f-b2240b70d7ed",
@@ -15,12 +15,13 @@
             "dataType": "Text"
           },
           "displayOrder": 1.1,
-          "mandatory": true
+          "mandatory": false
         }
       ]
     },
     {
       "uuid": "50a2d045-88fe-44e3-86e0-0dba16f53818",
+      "name": "ANC Enrolment past pregnancy complications",
       "formElements": [
         {
           "name": "Obstetrics history",
@@ -33,7 +34,7 @@
                 "Puerperal sepsis",
                 "Post abortion complication",
                 "Rh negative in the previous pregnancy",
-                "Weight of the previous baby less than 2500g or more than 4500g"
+                "Weight of the previous baby less than 2.5kg or more than 4.5kg"
               ]
             }
           ],
