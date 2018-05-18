@@ -10,9 +10,8 @@
           "uuid": "54917f80-15ea-416b-8746-7f2717a0dc84",
           "keyValues": [],
           "concept": {
-            "name": "Mother card number",
             "uuid": "be667c2a-48f7-4654-bd47-221788616c1c",
-            "dataType": "Text"
+            "name": "Mother card number"
           },
           "displayOrder": 1.1,
           "mandatory": false
@@ -59,17 +58,8 @@
           "keyValues": [],
           "type": "SingleSelect",
           "concept": {
-            "name": "Is she on TB medication?",
             "uuid": "b47dca1d-3f42-4280-9b3e-3d68cce88bed",
-            "dataType": "Coded",
-            "answers": [
-              {
-                "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
-              },
-              {
-                "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
-              }
-            ]
+            "name": "Is she on TB medication?"
           },
           "displayOrder": 1,
           "mandatory": true
@@ -80,18 +70,8 @@
           "keyValues": [],
           "type": "SingleSelect",
           "concept": {
-            "name": "Has she been taking her TB medication regularly?",
             "uuid": "2a8a5306-c0a9-4ca6-8bd7-b394069aa6f2",
-            "dataType": "Coded",
-            "answers": [
-              {
-                "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
-              },
-              {
-                "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
-                "abnormal": true
-              }
-            ]
+            "name": "Has she been taking her TB medication regularly?"
           },
           "displayOrder": 2,
           "mandatory": true
@@ -102,18 +82,8 @@
           "keyValues": [],
           "type": "SingleSelect",
           "concept": {
-            "name": "Did she complete her TB treatment?",
             "uuid": "4a20f69f-12c4-4472-ac82-ece0ab102e4b",
-            "dataType": "Coded",
-            "answers": [
-              {
-                "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
-              },
-              {
-                "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
-                "abnormal": true
-              }
-            ]
+            "name": "Did she complete her TB treatment?"
           },
           "displayOrder": 3,
           "mandatory": true
