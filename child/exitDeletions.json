@@ -1,0 +1,14 @@
+{
+    "uuid": "67165f46-890d-4747-ba9a-dbaa0cfa5353",
+    "formElementGroups": [
+        {
+            "uuid": "4cda489f-1891-4533-a8c3-30b936ea866f",
+            "formElements": [
+                {
+                    "uuid": "83e6cb7b-5f2d-4c5b-a9d1-0be071d6e956",
+                    "comment": "Place of death"
+                }
+            ]
+        }
+    ]
+}
