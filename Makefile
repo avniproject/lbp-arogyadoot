@@ -39,6 +39,7 @@ deploy_refdata: ## Creates reference data by POSTing it to the server
 	$(call _curl,DELETE,forms,@mother/enrolmentDeletions.json)
 	$(call _curl,DELETE,forms,@child/exitDeletions.json)
 	$(call _curl,PATCH,forms,@mother/enrolmentAdditions.json)
+	$(call _curl,PATCH,forms,@mother/pncAdditions.json)
 # </refdata>
 
 # <package>

@@ -1,0 +1,47 @@
+{
+  "uuid": "78b1400e-8100-4ba6-b78e-fef580f7fb77",
+  "name": "PNC",
+  "formElementGroups": [
+    {
+      "uuid": "71cb972d-f8dd-4d45-84e0-5566ae0fdae2",
+      "name": "PNC - Family Planning",
+      "displayOrder": 3,
+      "display": "Family Planning",
+      "formElements": [
+        {
+          "uuid": "fc31344d-40f8-4f86-a607-019ec8106c3e",
+          "name": "Is the mother using any contraceptive method?",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "cc06a578-4f7e-4416-bd44-fab714ace56c"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "uuid": "3ec35c19-5367-4250-9f35-c799ac7979d1",
+          "name": "Type of contraceptive method",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "e47c91b7-a543-48eb-a5d9-69fdcbda2495"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "uuid": "29687b21-4851-41ba-9dcf-82ff54d47539",
+          "name": "Availed Government scheme JSY?",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "20c1bf13-e5f1-43fa-85ce-6e75163bbea2"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        }
+      ]
+    }
+  ]
+}

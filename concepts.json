@@ -458,5 +458,78 @@
         "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
       }
     ]
+  },
+  {
+    "name": "Is the mother using any contraceptive method?",
+    "uuid": "cc06a578-4f7e-4416-bd44-fab714ace56c",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Intra Uterine Contraceptive Device (Cu-T)",
+    "uuid": "1921eeb0-6f18-47fa-9421-1865d616ba8d",
+    "dataType": "NA"
+  },
+  {
+    "name": "Oral Contraceptive pills",
+    "uuid": "9551fc70-e6d9-4f1d-b054-935c1b144890",
+    "dataType": "NA"
+  },
+  {
+    "name": "Condom",
+    "uuid": "8f975508-8179-450b-9a27-d11b7818677b",
+    "dataType": "NA"
+  },
+  {
+    "name": "Female Sterilization",
+    "uuid": "76709099-35f4-40b0-9fc7-4bec38d65599",
+    "dataType": "NA"
+  },
+  {
+    "name": "Male Sterilization",
+    "uuid": "d68f48be-7951-46b1-947e-37b02c023393",
+    "dataType": "NA"
+  },
+  {
+    "name": "Type of contraceptive method",
+    "uuid": "e47c91b7-a543-48eb-a5d9-69fdcbda2495",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "1921eeb0-6f18-47fa-9421-1865d616ba8d"
+      },
+      {
+        "uuid": "9551fc70-e6d9-4f1d-b054-935c1b144890"
+      },
+      {
+        "uuid": "8f975508-8179-450b-9a27-d11b7818677b"
+      },
+      {
+        "uuid": "76709099-35f4-40b0-9fc7-4bec38d65599"
+      },
+      {
+        "uuid": "d68f48be-7951-46b1-947e-37b02c023393"
+      }
+    ]
+  },
+  {
+    "name": "Availed Government scheme JSY?",
+    "uuid": "20c1bf13-e5f1-43fa-85ce-6e75163bbea2",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
   }
 ]
