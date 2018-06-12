@@ -22,6 +22,16 @@
           "mandatory": false
         },
         {
+          "name": "Mother's name",
+          "uuid": "961296ca-ba17-4d2a-a133-a3336aefd0a2",
+          "keyValues": [],
+          "concept": {
+            "uuid": "5f63aa4d-d673-49c6-a5dc-3b16044911eb"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
           "name": "Number of Members in House",
           "uuid": "ba602a8e-69d2-49d2-960c-3f130d616686",
           "keyValues": [],
@@ -29,7 +39,7 @@
             "uuid": "c7ba75b7-fafc-41b6-83c4-82e69183d595",
             "name": "Number of Members in House"
           },
-          "displayOrder": 2,
+          "displayOrder": 3,
           "mandatory": false
         }
       ]
