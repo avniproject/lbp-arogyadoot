@@ -1,4 +1,4 @@
-const {isDefined, defaultTo} = require("../utils");
+const {isDefined, defaultTo} = require("./utils");
 
 class RuleRegistry {
     constructor() {
