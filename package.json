@@ -6,10 +6,11 @@
     "type": "git",
     "url": "https://github.com/OpenCHS/lbp-arogyadoot.git"
   },
-  "license": "AGPL-3.0",
   "scripts": {},
   "dependencies": {},
   "devDependencies": {
-    "rules-config": "github:openchs/rules-config"
-  }
+    "rules-config": "github:openchs/rules-config",
+    "amazon-cognito-identity-js": "1.28.0"
+  },
+  "license": "AGPL-3.0"
 }

@@ -19,6 +19,15 @@ server:= $(if $(server),$(server),http://localhost)
 su:=$(shel`l id -un)
 org_name=Lokbiradari Prakalp
 
+token:=
+poolId:=
+clientId:=
+username:=
+password:=
+
+auth:
+	$(if $(poolId),$(eval token:=$(shell node scripts/token.js $(poolId) $(clientId) $(username) $(password))))
+
 _curl = \
 	curl -X $(1) $(server):$(port)/$(2) -d $(3)  \
 		-H "Content-Type: application/json"  \
@@ -52,12 +61,10 @@ build_package: ## Builds a deployable package
 # </package>
 
 # <deploy>
-deploy: deploy_refdata ##  
+deploy: create_org deploy_refdata
+
+create_deploy: create_org deploy_refdata ##
+
+deploy_live:
+	make auth deploy poolId=$(STAGING_USER_POOL_ID) clientId=$(STAGING_APP_CLIENT_ID) username=lbp-demo password=$(STAGING_LBP_USER_PASSWORD)
 # </deploy>
-
-# <c_d>
-create_deploy: create_org deploy_refdata ##  
-# </c_d>
-
-deps:
-	npm i
