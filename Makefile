@@ -68,3 +68,6 @@ create_deploy: create_org deploy_refdata ##
 deploy_live:
 	make auth deploy poolId=$(STAGING_USER_POOL_ID) clientId=$(STAGING_APP_CLIENT_ID) username=lbp-demo password=$(STAGING_LBP_USER_PASSWORD)
 # </deploy>
+
+deps:
+	npm i
