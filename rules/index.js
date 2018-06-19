@@ -1,4 +1,4 @@
-const RuleFactory = require('./additional/Rule');
+const RuleFactory = require('rules-config/config');
 
 
 const ANCFormProgramEncounterDecisions = RuleFactory("3a95e9b0-731a-4714-ae7c-10e1d03cebfe", "decision");
