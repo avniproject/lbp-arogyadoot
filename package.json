@@ -1,0 +1,15 @@
+{
+  "name": "lbp-arogyadoot-config",
+  "version": "0.0.1",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OpenCHS/lbp-arogyadoot.git"
+  },
+  "license": "AGPL-3.0",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "rules-config": "openchs/rules-config"
+  }
+}
