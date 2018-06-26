@@ -1,0 +1,21 @@
+{
+  "organisationName": "Lokbiradari Prakalp",
+  "operationalPrograms": [
+    {
+      "uuid": "a2421ebd-dff7-44f4-bd3a-cd2f1c01c440",
+      "name": "Mother",
+      "program": {
+        "uuid": "076ddb2d-a499-4314-af95-4178553d279b",
+        "comment": "Mother"
+      }
+    },
+    {
+      "uuid": "ed69dff6-1a34-48d2-88a3-91b33fcb22c1",
+      "name": "Child",
+      "program": {
+        "uuid": "352d906c-b386-496c-ba23-91b1468a5613",
+        "comment": "Child"
+      }
+    }
+  ]
+}

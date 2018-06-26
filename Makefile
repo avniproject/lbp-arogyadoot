@@ -28,11 +28,14 @@ password:=
 auth:
 	$(if $(poolId),$(eval token:=$(shell node scripts/token.js $(poolId) $(clientId) $(username) $(password))))
 
-_curl = \
+define _curl
 	curl -X $(1) $(server):$(port)/$(2) -d $(3)  \
 		-H "Content-Type: application/json"  \
 		-H "ORGANISATION-NAME: $(org_name)"  \
-		-H "AUTH-TOKEN: $(token)" \
+		-H "AUTH-TOKEN: $(token)"
+	@echo
+	@echo
+endef
 
 # <create_org>
 create_org: ## Create Lokbiradari Prakalp org and user+privileges
@@ -49,7 +52,8 @@ deploy_org_data_live:
 _deploy_refdata:
 	$(call _curl,POST,concepts,@concepts.json)
 	$(call _curl,POST,forms,@registrationForm.json)
-	$(call _curl,POST,operationalModules,@operationalModules.json)
+	$(call _curl,POST,operationalEncounterTypes,@operationalModules/operationalEncounterTypes.json)
+	$(call _curl,POST,operationalPrograms,@operationalModules/operationalPrograms.json)
 	$(call _curl,DELETE,forms,@mother/enrolmentDeletions.json)
 	$(call _curl,DELETE,forms,@child/exitDeletions.json)
 	$(call _curl,PATCH,forms,@mother/enrolmentAdditions.json)
