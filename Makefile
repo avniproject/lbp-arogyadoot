@@ -58,7 +58,6 @@ _deploy_refdata:
 	$(call _curl,DELETE,forms,@child/exitDeletions.json)
 	$(call _curl,PATCH,forms,@mother/enrolmentAdditions.json)
 	$(call _curl,PATCH,forms,@mother/pncAdditions.json)
-	node index.js
 
 deploy_refdata: deploy_org_data _deploy_refdata
 
