@@ -59,9 +59,12 @@ _deploy_refdata:
 	$(call _curl,PATCH,forms,@mother/enrolmentAdditions.json)
 	$(call _curl,PATCH,forms,@mother/pncAdditions.json)
 
+deploy_rules:
+	node index.js
+
 deploy_refdata: deploy_org_data _deploy_refdata
 
-deploy: create_org deploy_refdata
+deploy: create_org deploy_refdata deploy_rules
 
 create_deploy: create_org deploy_refdata ##
 
