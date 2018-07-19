@@ -1,0 +1,69 @@
+{
+  "organisationName": "Lokbiradari Prakalp",
+  "operationalEncounterTypes": [
+    {
+      "uuid": "860399a6-81b2-460a-8b8f-4a0d5174a3dd",
+      "name": "Outpatient",
+      "encounterType": {
+        "uuid": "465e9469-0dce-475f-a235-39da5b0da174",
+        "comment": "Outpatient"
+      }
+    },
+    {
+      "uuid": "5271906d-666c-407f-bf01-5520f811f448",
+      "name": "ANC",
+      "encounterType": {
+        "uuid": "b1efaffa-c8df-4801-8bbb-bf7c7bd6a0bd",
+        "comment": "ANC"
+      }
+    },
+    {
+      "uuid": "41a540ba-b643-45f2-a8b5-d7327213f7cb",
+      "name": "Delivery",
+      "encounterType": {
+        "uuid": "7b6a93c7-e1e1-4e73-842d-df8a1935bde2",
+        "comment": "Delivery"
+      }
+    },
+    {
+      "uuid": "42e4e6c5-42b9-479f-a480-664ab6d67e89",
+      "name": "Abortion",
+      "encounterType": {
+        "uuid": "1dec6355-4abd-45b7-89ab-bae1f5f9cc07",
+        "comment": "Abortion"
+      }
+    },
+    {
+      "uuid": "864f4332-f048-4492-a83e-7456d572e0e6",
+      "name": "PNC",
+      "encounterType": {
+        "uuid": "e9971396-b74f-411c-956d-da44073922f5",
+        "comment": "PNC"
+      }
+    },
+    {
+      "uuid": "db101e80-ff73-48aa-91d5-8bb72caba2f2",
+      "name": "Child PNC",
+      "encounterType": {
+        "uuid": "330d954c-ab5f-4ea1-be8b-ba26a12bdfbc",
+        "comment": "Child PNC"
+      }
+    },
+    {
+      "uuid": "0524d5b7-b3ef-4b19-a20e-34a8373c6538",
+      "name": "Birth",
+      "encounterType": {
+        "uuid": "1f07ae8c-faa4-4934-8e06-9038e62fc2ac",
+        "comment": "Birth"
+      }
+    },
+    {
+      "uuid": "aaf36930-1f88-42d7-ac79-8f5ae0153d01",
+      "name": "Anthropometry Assessment",
+      "encounterType": {
+        "uuid": "02c72b2b-19f0-4f75-b734-dcad5601881b",
+        "comment": "Anthropometry Assessment"
+      }
+    }
+  ]
+}
