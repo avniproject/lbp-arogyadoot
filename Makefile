@@ -44,6 +44,7 @@ create_org: ## Create Lokbiradari Prakalp org and user+privileges
 
 # <deploy>
 deploy_org_data:
+	$(call _curl,POST,locations,@locations.json)
 	$(call _curl,POST,catchments,@catchments.json)
 
 deploy_org_data_live:
