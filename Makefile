@@ -67,7 +67,7 @@ deploy_refdata: deploy_org_data _deploy_refdata
 
 deploy: create_org deploy_refdata deploy_rules
 
-create_deploy: create_org deploy_refdata ##
+create_deploy: create_org deploy ##
 
 deploy_refdata_live:
 	make auth _deploy_refdata poolId=$(STAGING_USER_POOL_ID) clientId=$(STAGING_APP_CLIENT_ID) username=lbp-admin password=$(STAGING_LBP_ADMIN_USER_PASSWORD)
