@@ -5,9 +5,21 @@ const RegistrationFormHandler = RuleFactory("881f0ddb-ce35-4372-abae-622fb04bc23
 @RegistrationFormHandler("f9d02ea8-af32-4e08-8564-2023a532cccf", "[LBP] Registration View Form Handler", 1.0, {})
 class RegistrationFormHandlerLBP {
     education(individual, formElement) {
+        return this._showBasedOnAge(individual, formElement, 5);
+    }
+
+    _showBasedOnAge(individual, formElement, age) {
         const statusBuilder = new FormElementStatusBuilder({individual, formElement});
-        statusBuilder.show().when.age.is.greaterThan(5);
+        statusBuilder.show().when.age.is.greaterThan(age);
         return statusBuilder.build();
+    }
+
+    doYouConsumeAnyTobaccoProducts(individual, formElement) {
+        return this._showBasedOnAge(individual, formElement, 5);
+    }
+
+    doYouConsumeAnyAlcoholicProducts(individual, formElement) {
+        return this._showBasedOnAge(individual, formElement, 5);
     }
 
     static exec(individual, formElementGroup, today) {
