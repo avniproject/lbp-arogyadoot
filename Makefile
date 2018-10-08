@@ -16,7 +16,7 @@ help:
 port:= $(if $(port),$(port),8021)
 server:= $(if $(server),$(server),http://localhost)
 
-su:=$(shel`l id -un)
+su:=$(shell id -un)
 org_name=Lokbiradari Prakalp
 
 token:=
