@@ -406,5 +406,21 @@
         "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
       }
     ]
+  },
+  {
+    "name": "Greenish Stool",
+    "uuid": "5721b5e2-5492-4473-aee6-50b9383c4d41"
+  },
+  {
+    "name": "Child PNC stool related complaints",
+    "uuid": "bcd4495f-41fa-494b-a5d9-a766c87f37f9",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Greenish Stool",
+        "uuid": "5721b5e2-5492-4473-aee6-50b9383c4d41",
+        "abnormal": true
+      }
+    ]
   }
 ]
