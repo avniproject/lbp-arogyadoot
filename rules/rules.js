@@ -11,7 +11,7 @@ class RegistrationFormHandlerLBP {
 
     _showBasedOnAge(individual, formElement, age) {
         const statusBuilder = new FormElementStatusBuilder({individual, formElement});
-        statusBuilder.show().when.age.is.greaterThan(age);
+        statusBuilder.show().when.ageInYears.is.greaterThanOrEqualTo(age);
         return statusBuilder.build();
     }
 
@@ -29,7 +29,7 @@ class RegistrationFormHandlerLBP {
     }
 }
 
-@ChildPNCFormHandler("f9d02ea8-af32-4e08-8564-2023a532cccf", "[LBP] Child PNC View Form Handler", 1.0, {})
+@ChildPNCFormHandler("8ec8cd68-dbae-46f1-b739-e8849c90eaa2", "[LBP] Child PNC View Form Handler", 1.0, {})
 class childPNCFormHandlerLBP{
 
     stoolRelatedComplaints(programEncounter, formElement) {
