@@ -1,3 +1,5 @@
 const {postAllRules} = require("rules-config/infra");
-
-postAllRules("Lokbiradari Prakalp", "./rules/rules.js");
+const _ = require('lodash');
+const serverurl = _.isEmpty(process.argv[2]) ? 'http://localhost:8021' : process.argv[2];
+const token = _.isEmpty(process.argv[3]) ? '' : process.argv[3];
+postAllRules("Lokbiradari Prakalp", "./rules.js", serverurl, token);
