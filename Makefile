@@ -15,7 +15,7 @@ help:
 
 port:= $(if $(port),$(port),8021)
 server:= $(if $(server),$(server),http://localhost)
-
+server_url:=$(server):$(port)
 su:=$(shell id -un)
 org_name=Lokbiradari Prakalp
 
@@ -27,6 +27,10 @@ password:=
 
 auth:
 	$(if $(poolId),$(eval token:=$(shell node scripts/token.js $(poolId) $(clientId) $(username) $(password))))
+	echo $(token)
+
+auth_live:
+	make auth poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) username=admin password=$(OPENCHS_PROD_ADMIN_USER_PASSWORD)
 
 define _curl
 	curl -X $(1) $(server):$(port)/$(2) -d $(3)  \
@@ -60,7 +64,10 @@ _deploy_refdata:
 	$(call _curl,PATCH,forms,@mother/pncAdditions.json)
 
 deploy_rules:
-	node index.js
+	node index.js "$(server_url)" "$(token)"
+
+deploy_rules_live:
+	make auth deploy_rules poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) username=admin password=$(OPENCHS_PROD_ADMIN_USER_PASSWORD) server=https://server.openchs.org port=443
 
 deploy_refdata: deploy_org_data _deploy_refdata
 

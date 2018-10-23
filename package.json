@@ -10,6 +10,7 @@
   "scripts": {},
   "dependencies": {},
   "devDependencies": {
-    "rules-config": "github:openchs/rules-config#11c83f8c9d16770b1bc3768087bc18d0f324ad08"
+    "rules-config": "github:openchs/rules-config#11c83f8c9d16770b1bc3768087bc18d0f324ad08",
+    "amazon-cognito-identity-js": "1.28.0"
   }
 }
