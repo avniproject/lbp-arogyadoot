@@ -46,6 +46,13 @@ create_org: ## Create Lokbiradari Prakalp org and user+privileges
 	psql -U$(su) openchs < create_organisation.sql
 # </create_org>
 
+
+deploy_checklists:
+	$(call _curl,POST,forms,@child/checklistForm.json)
+	$(call _curl,POST,checklistDetail,@child/checklist.json)
+
+
+
 # <deploy>
 deploy_org_data:
 	$(call _curl,POST,catchments,@catchments.json)
@@ -71,7 +78,7 @@ deploy_rules_live:
 
 deploy_refdata: deploy_org_data _deploy_refdata
 
-deploy: create_org deploy_refdata deploy_rules
+deploy: create_org deploy_checklists deploy_refdata deploy_rules
 
 create_deploy: create_org deploy ##
 

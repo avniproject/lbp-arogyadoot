@@ -1,0 +1,17 @@
+{
+  "name": "Vaccination Checklist Form",
+  "uuid": "1579166d-b7ec-49ca-a60f-08f68ee27826",
+  "formType": "ChecklistItem",
+  "userUUID": "5fed2907-df3a-4867-aef5-c87f4c78a31a",
+  "formElementGroups": [
+    {
+      "uuid": "be001f18-9920-4fba-8fc8-12caa7e1720a",
+      "name": "Vaccination",
+      "display": "Vaccination",
+      "displayOrder": 1,
+      "formElements": [
+
+      ]
+    }
+  ]
+}
