@@ -1,0 +1,13 @@
+[
+  {
+    "uuid": "f4b09b03-503f-4137-85da-7bd4c20ba727",
+    "name": "lbp-admin",
+    "password": "password",
+    "email": "openchssupport+lbp+admin@samanvayfoundation.org",
+    "phoneNumber": "+919999999999",
+    "organisationUUID": "3de82517-7a60-4b83-b98a-53d9c89eba02",
+    "operatingIndividualScope": "None",
+    "isAdmin": "false",
+    "isOrgAdmin": "true"
+  }
+]

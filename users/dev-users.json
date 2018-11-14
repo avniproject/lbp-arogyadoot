@@ -1,0 +1,14 @@
+[
+  {
+    "uuid": "009ff4bb-dabc-444c-8b55-59a8e189ba56",
+    "name": "lbp-test",
+    "password": "password",
+    "email": "openchssupport+lbt+test+1@samanvayfoundation.org",
+    "phoneNumber": "+919999999999",
+    "organisationUUID": "3de82517-7a60-4b83-b98a-53d9c89eba02",
+    "catchmentUUID": "005a1d1a-d5ec-48c8-9589-44a74b1e4bc9",
+    "operatingIndividualScope": "ByCatchment",
+    "isAdmin": "false",
+    "isOrgAdmin": "false"
+  }
+]

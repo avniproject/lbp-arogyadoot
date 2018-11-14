@@ -18,8 +18,8 @@ server:= $(if $(server),$(server),http://localhost)
 server_url:=$(server):$(port)
 su:=$(shell id -un)
 org_name=Lokbiradari Prakalp
+org_admin_name=lbp-admin
 
-token:=
 poolId:=
 clientId:=
 username:=
@@ -30,13 +30,22 @@ auth:
 	echo $(token)
 
 auth_live:
-	make auth poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) username=admin password=$(OPENCHS_PROD_ADMIN_USER_PASSWORD)
+	make auth poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) username=lbp-admin password=$(OPENCHS_PROD_ADMIN_USER_PASSWORD)
 
 define _curl
-	curl -X $(1) $(server):$(port)/$(2) -d $(3)  \
+	curl -X $(1) $(server_url)/$(2) -d $(3)  \
 		-H "Content-Type: application/json"  \
-		-H "ORGANISATION-NAME: $(org_name)"  \
-		-H "AUTH-TOKEN: $(token)"
+		-H "USER-NAME: $(org_admin_name)"  \
+		$(if $(token),-H "AUTH-TOKEN: $(token)",)
+	@echo
+	@echo
+endef
+
+define _curl_as_openchs
+	curl -X $(1) $(server_url)/$(2) -d $(3)  \
+		-H "Content-Type: application/json"  \
+		-H "USER-NAME: admin"  \
+		$(if $(token),-H "AUTH-TOKEN: $(token)",)
 	@echo
 	@echo
 endef
@@ -58,6 +67,15 @@ deploy_org_data:
 	$(call _curl,POST,locations,@locations.json)
 	$(call _curl,POST,catchments,@catchments.json)
 
+create_admin_user:
+	$(call _curl_as_openchs,POST,users,@admin-user.json)
+
+create_admin_user_dev:
+	$(call _curl_as_openchs,POST,users,@users/dev-admin-user.json)
+
+create_users_dev:
+	$(call _curl_as_openchs,POST,users,@users/dev-users.json)
+
 deploy_org_data_live:
 	make auth deploy_org_data poolId=$(STAGING_USER_POOL_ID) clientId=$(STAGING_APP_CLIENT_ID) username=admin password=$(STAGING_ADMIN_USER_PASSWORD)
 
@@ -67,6 +85,7 @@ _deploy_refdata:
 	$(call _curl,POST,operationalEncounterTypes,@operationalModules/operationalEncounterTypes.json)
 	$(call _curl,POST,operationalPrograms,@operationalModules/operationalPrograms.json)
 	$(call _curl,DELETE,forms,@mother/enrolmentDeletions.json)
+	$(call _curl,PATCH,forms,@mother/deliveryAdditions.json)
 	$(call _curl,DELETE,forms,@child/exitDeletions.json)
 	$(call _curl,PATCH,forms,@mother/enrolmentAdditions.json)
 	$(call _curl,PATCH,forms,@mother/pncAdditions.json)
@@ -75,11 +94,20 @@ deploy_rules:
 	node index.js "$(server_url)" "$(token)"
 
 deploy_rules_live:
-	make auth deploy_rules poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) username=admin password=$(OPENCHS_PROD_ADMIN_USER_PASSWORD) server=https://server.openchs.org port=443
+	make auth deploy_rules poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) username=lbp-admin password=$(OPENCHS_PROD_ADMIN_USER_PASSWORD) server=https://server.openchs.org port=443
 
 deploy_refdata: deploy_org_data _deploy_refdata
 
-deploy: create_org deploy_checklists deploy_refdata deploy_rules
+deploy: create_admin_user_dev deploy_refdata deploy_checklists deploy_rules create_users_dev##
+
+_deploy_prod: deploy_refdata deploy_checklists deploy_rules
+
+deploy_prod:
+#	there is a bug in server side. which sets both isAdmin, isOrgAdmin to be false. it should be done. also metadata upload should not rely on isAdmin role.
+#	need to be fixed. then uncomment the following line.
+#	make auth deploy_admin_user poolId=ap-south-1_DU27AHJvZ clientId=1d6rgvitjsfoonlkbm07uivgmg server=https://server.openchs.org port=443 username=admin password=
+	make auth _deploy_prod poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) server=https://server.openchs.org port=443 username=lbp-admin password=$(password)
+
 
 create_deploy: create_org deploy ##
 
