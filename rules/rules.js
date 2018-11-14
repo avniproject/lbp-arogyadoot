@@ -8,6 +8,7 @@ import {
 } from 'rules-config/rules';
 
 const EnrolmentChecklists = RuleFactory("1608c2c0-0334-41a6-aab0-5c61ea1eb069", "Checklists");
+const DeliveryFilter = RuleFactory("cc6a3c6a-c3cc-488d-a46c-d9d538fcc9c2", 'ViewFilter');
 
 @EnrolmentChecklists("e92d9b5a-8596-4784-8142-04be4f1b1485", "LBP Child Vaccination checklists", 100.0)
 class ChildChecklists {
@@ -53,5 +54,20 @@ class RegistrationFormHandlerLBP {
     }
 }
 
+@DeliveryFilter("9a133cd1-f26d-47e9-9dd0-1af6869df982", "[LBP] Delivery Form Handler", 100.0, {})
+class DeliveryFormHandlerLBP {
+    static exec(programEncounter, formElementGroup, today) {
+        return FormElementsStatusHelper
+            .getFormElementsStatusesWithoutDefaults(new DeliveryFormHandlerLBP(), programEncounter, formElementGroup, today);
+    }
 
-module.exports = {RegistrationFormHandlerLBP,ChildChecklists};
+    whetherEpisiotomyGiven(programEncounter, formElement) {
+        const statusBuilder = new FormElementStatusBuilder({programEncounter, formElement});
+        statusBuilder.show().when.valueInEncounter("Type of delivery")
+            .containsAnyAnswerConceptName("Normal", "Instrumental");
+        return statusBuilder.build();
+
+    }
+}
+
+module.exports = {RegistrationFormHandlerLBP,ChildChecklists,DeliveryFormHandlerLBP};

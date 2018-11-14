@@ -1,0 +1,21 @@
+{
+  "uuid": "cc6a3c6a-c3cc-488d-a46c-d9d538fcc9c2",
+  "formElementGroups": [
+    {
+      "uuid": "fa392acd-d9bf-4b90-b520-bc28d61300b8",
+      "formElements": [
+        {
+          "name": "Whether episiotomy given",
+          "uuid": "6001ade3-457b-41d2-8ea5-b95410c3c319",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "f6a15247-b326-4940-b3cd-2adffedf661a"
+          },
+          "displayOrder": 2.5,
+          "mandatory": true
+        }
+      ]
+    }
+  ]
+}
