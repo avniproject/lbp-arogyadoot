@@ -74,10 +74,10 @@ create_admin_user_dev:
 	$(call _curl_as_openchs,POST,users,@users/dev-admin-user.json)
 
 create_users_dev:
-	$(call _curl_as_openchs,POST,users,@users/dev-users.json)
+	$(call _curl,POST,users,@users/dev-users.json)
 
 deploy_org_data_live:
-	make auth deploy_org_data poolId=$(STAGING_USER_POOL_ID) clientId=$(STAGING_APP_CLIENT_ID) username=admin password=$(STAGING_ADMIN_USER_PASSWORD)
+	make auth deploy_org_data poolId=$(STAGING_USER_POOL_ID) clientId=$(STAGING_APP_CLIENT_ID) username=lbp-admin password=$(STAGING_ADMIN_USER_PASSWORD)
 
 _deploy_refdata:
 	$(call _curl,POST,concepts,@concepts.json)
