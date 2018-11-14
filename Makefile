@@ -22,7 +22,7 @@ org_admin_name=lbp-admin
 
 poolId:=
 clientId:=
-username:=
+username:=lbp-admin
 password:=
 
 auth:
@@ -91,10 +91,10 @@ _deploy_refdata:
 	$(call _curl,PATCH,forms,@mother/pncAdditions.json)
 
 deploy_rules:
-	node index.js "$(server_url)" "$(token)"
+	node index.js "$(server_url)" "$(token)" "$(username)"
 
 deploy_rules_live:
-	make auth deploy_rules poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) username=lbp-admin password=$(OPENCHS_PROD_ADMIN_USER_PASSWORD) server=https://server.openchs.org port=443
+	make auth deploy_rules poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) username=lbp-admin password=$(password) server=https://server.openchs.org port=443
 
 deploy_refdata: deploy_org_data _deploy_refdata
 
