@@ -125,3 +125,30 @@ build_package: ## Builds a deployable package
 
 deps:
 	npm i
+
+set_prod_auth:
+	$(eval poolId:=$(OPENCHS_PROD_USER_POOL_ID))
+	$(eval clientId:=$(OPENCHS_PROD_APP_CLIENT_ID))
+
+as_admin:
+	$(eval username:=admin)
+
+as_org_admin:
+	$(eval username:=$(org_admin_name))
+
+#18021 is port forwared TO in-premise machine
+#start tunneling before running any of the following commands
+inpremise_create_admin_with_prod_auth:
+	make set_prod_auth as_admin auth create_admin_user password=$(password) server=http://localhost port=18021
+
+inpremise_deploy_with_prod_auth:
+	make set_prod_auth as_org_admin auth _deploy_prod password=$(password) server=http://localhost port=18021
+
+inpremise_deploy_refdata_with_prod_auth:
+	make set_prod_auth as_org_admin auth deploy_refdata password=$(password) server=http://localhost port=18021
+
+inpremise_deploy_checklists_with_prod_auth:
+	make set_prod_auth as_org_admin auth deploy_checklists password=$(password) server=http://localhost port=18021
+
+inpremise_deploy_rules_with_prod_auth:
+	make set_prod_auth as_org_admin auth deploy_rules password=$(password) server=http://localhost port=18021
