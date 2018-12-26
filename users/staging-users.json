@@ -1,0 +1,13 @@
+[
+  {
+    "uuid": "a0637a30-1d88-42e8-97bc-efe6483d47e7",
+    "name": "lbp-staging",
+    "email": "openchssupport+lbt+test+1@samanvayfoundation.org",
+    "phoneNumber": "+919999999999",
+    "organisationUUID": "3de82517-7a60-4b83-b98a-53d9c89eba02",
+    "catchmentUUID": "005a1d1a-d5ec-48c8-9589-44a74b1e4bc9",
+    "operatingIndividualScope": "ByCatchment",
+    "admin": false,
+    "orgAdmin": false
+  }
+]
