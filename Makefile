@@ -89,6 +89,8 @@ _deploy_refdata:
 	$(call _curl,DELETE,forms,@child/exitDeletions.json)
 	$(call _curl,PATCH,forms,@mother/enrolmentAdditions.json)
 	$(call _curl,PATCH,forms,@mother/pncAdditions.json)
+	$(call _curl,DELETE,forms,@mother/ancDeletions.json)
+	$(call _curl,PATCH,forms,@mother/ancAdditions.json)
 
 deploy_rules:
 	node index.js "$(server_url)" "$(token)" "$(username)"
