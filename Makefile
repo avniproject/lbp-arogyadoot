@@ -76,6 +76,9 @@ create_admin_user_dev:
 create_users_dev:
 	$(call _curl,POST,users,@users/dev-users.json)
 
+create_users:
+	$(call _curl,POST,users,@users/users.json)
+
 deploy_org_data_live:
 	make auth deploy_org_data poolId=$(STAGING_USER_POOL_ID) clientId=$(STAGING_APP_CLIENT_ID) username=lbp-admin password=$(STAGING_ADMIN_USER_PASSWORD)
 
@@ -154,3 +157,6 @@ inpremise_deploy_checklists_with_prod_auth:
 
 inpremise_deploy_rules_with_prod_auth:
 	make set_lbp_prod_auth as_org_admin auth deploy_rules password=$(password) server=http://localhost port=18021
+
+inpremise_create_users_with_prod_auth:
+	make set_lbp_prod_auth as_org_admin auth create_users password=$(password) server=http://localhost port=18021
