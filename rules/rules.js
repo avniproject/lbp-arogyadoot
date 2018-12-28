@@ -1,4 +1,5 @@
-const {RuleFactory, FormElementStatusBuilder, FormElementsStatusHelper} = require('rules-config/rules');
+import {RuleFactory, FormElementStatusBuilder, FormElementsStatusHelper, complicationsBuilder as ComplicationsBuilder} from 'rules-config/rules';
+import lib from '../lib';
 
 const moment = require("moment");
 const _ = require("lodash");
@@ -70,4 +71,66 @@ class DeliveryFormHandlerLBP {
     }
 }
 
-module.exports = {RegistrationFormHandlerLBP,ChildChecklists,DeliveryFormHandlerLBP};
+const ANCDecisionRule = RuleFactory("3a95e9b0-731a-4714-ae7c-10e1d03cebfe", "Decision");
+
+const inchIncrease = (enrolment, encounter, multiplicationFactor, conceptName, toDate = new Date()) => {
+    const lastEncounter = enrolment.findLastEncounterOfType(encounter, [_.get(encounter, "encounterType.name")]);
+    const previousVal = lastEncounter && lastEncounter.getObservationValue(conceptName);
+    const currentVal = encounter && encounter.getObservationValue(conceptName);
+    const numberOfWeeksSinceLastEncounter = _.round(FormElementsStatusHelper.weeksBetween(toDate, _.get(lastEncounter, "encounterDateTime")));
+    return ([previousVal, currentVal, numberOfWeeksSinceLastEncounter].some(k => _.isNil(k))) ||
+        (_.every([previousVal, currentVal, numberOfWeeksSinceLastEncounter], (k) => !_.isNil(k))
+            && (currentVal - previousVal) === (numberOfWeeksSinceLastEncounter * multiplicationFactor));
+};
+
+const isNormalAbdominalGirthIncrease = (enrolment, encounter, toDate = new Date()) => {
+    return inchIncrease(enrolment, encounter, 1, "Abdominal girth in inches", toDate);
+};
+
+const lmp = (programEnrolment) => {
+    return programEnrolment.getObservationValue('Last menstrual period');
+};
+
+const gestationalAge = (enrolment, toDate = new Date()) => lib.C.weeksBetween(toDate, lmp(enrolment));
+
+
+@ANCDecisionRule("de0af2f7-69ff-4f7d-82cf-6540f4347640", "LBP ANC Decision", 100.0, {})
+class ANCDecisionsLBP {
+    static exec(programEncounter, decisions, context, today) {
+        const highRiskBuilder = new ComplicationsBuilder({
+            programEnrolment: programEncounter.programEnrolment,
+            programEncounter: programEncounter,
+            complicationsConcept: 'High Risk Conditions'
+        });
+
+        highRiskBuilder.addComplication("Irregular abdominal girth increase")
+            .whenItem(gestationalAge(programEncounter.programEnrolment, today)).greaterThan(30)
+            .and.whenItem(isNormalAbdominalGirthIncrease(programEncounter.programEnrolment, programEncounter, programEncounter.encounterDateTime)).is.not.truthy;
+
+        let abdominalGirthHighRisk = highRiskBuilder.getComplications();
+        let highRiskConditions = lib.C.findValue(decisions['encounterDecisions'], 'High Risk Conditions');
+        [].push.apply(highRiskConditions,abdominalGirthHighRisk.value);
+
+
+        const referralAdvice = new ComplicationsBuilder({
+            programEnrolment: programEncounter.programEnrolment,
+            programEncounter: programEncounter,
+            complicationsConcept: 'Refer to the hospital for'
+        });
+
+        referralAdvice.addComplication("Irregular abdominal girth increase")
+            .whenItem(gestationalAge(programEncounter.programEnrolment, today)).greaterThan(30)
+            .and.whenItem(isNormalAbdominalGirthIncrease(programEncounter.programEnrolment, programEncounter, programEncounter.encounterDateTime)).is.not.truthy;
+
+
+        let adominalGirthreferralAdvice = referralAdvice.getComplications();
+        let referralAdvices = lib.C.findValue(decisions['encounterDecisions'], 'Refer to the hospital for');
+        [].push.apply(referralAdvices,adominalGirthreferralAdvice.value);
+
+        return decisions;
+
+    }
+
+}
+
+module.exports = {RegistrationFormHandlerLBP, ChildChecklists, DeliveryFormHandlerLBP, ANCDecisionsLBP};

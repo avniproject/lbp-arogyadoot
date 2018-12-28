@@ -419,6 +419,13 @@
         "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
       }
     ]
+  },
+  {
+    "name": "Abdominal girth in inches",
+    "uuid": "e3503558-3dae-420d-8fe7-602d140e9243",
+    "dataType": "Numeric",
+    "unit": "inches"
   }
+
 
 ]

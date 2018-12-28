@@ -1,0 +1,21 @@
+{
+  "uuid": "3a95e9b0-731a-4714-ae7c-10e1d03cebfe",
+  "formElementGroups": [
+    {
+      "uuid": "1ca46e2e-36bc-415b-ba50-9021588e676a",
+      "formElements": [
+        {
+          "name": "Abdominal girth in inches",
+          "uuid": "32456584-e9b7-4d06-a2e3-58cc3963f78f",
+          "keyValues": [],
+          "concept": {
+            "name": "Abdominal girth in inches",
+            "uuid": "e3503558-3dae-420d-8fe7-602d140e9243"
+          },
+          "displayOrder": 3.5,
+          "mandatory": true
+        }
+      ]
+    }
+  ]
+}
