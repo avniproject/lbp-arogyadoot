@@ -7,7 +7,7 @@
     "phoneNumber": "+919999999999",
     "organisationUUID": "3de82517-7a60-4b83-b98a-53d9c89eba02",
     "operatingIndividualScope": "None",
-    "isAdmin": "false",
-    "isOrgAdmin": "true"
+    "admin": false,
+    "orgAdmin": true
   }
 ]
