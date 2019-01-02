@@ -305,7 +305,8 @@
         "abnormal": true
       },
       {
-        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "unique": true
       }
     ]
   },
@@ -335,7 +336,8 @@
         "abnormal": true
       },
       {
-        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc",
+        "unique": true
       }
     ]
   },
