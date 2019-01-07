@@ -27,7 +27,7 @@ password:=
 
 auth:
 	$(if $(poolId),$(eval token:=$(shell node scripts/token.js $(poolId) $(clientId) $(username) $(password))))
-	echo $(token)
+	@echo $(token)
 
 auth_live:
 	make auth poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) username=lbp-admin password=$(OPENCHS_PROD_ADMIN_USER_PASSWORD)
@@ -160,3 +160,14 @@ inpremise_deploy_rules_with_prod_auth:
 
 inpremise_create_users_with_prod_auth:
 	make set_lbp_prod_auth as_org_admin auth create_users password=$(password) server=http://localhost port=18021
+
+# Ignore these
+# Migration related tasks
+# Not in use
+
+#deploy_migrated_address:
+#	$(call _curl,POST,locations,@migrated/migrated-locations.json)
+#	$(call _curl,POST,catchments,@migrated/migrated-catchments.json)
+
+#inpremise_deploy_migrated_address_with_prod_auth:
+#	make set_lbp_prod_auth as_org_admin auth deploy_migrated_address password=$(password) server=http://localhost port=18021
