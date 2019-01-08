@@ -185,6 +185,149 @@
           "uuid": "cbaaf17d-ceec-4bc5-9db5-75b7a75428c2"
         }
       ]
+    },
+    {
+      "name": "Lokbiradari Prakalp Master Catchment Old",
+      "uuid": "eabfe93e-bb33-4988-8f24-6dffe86f6d17",
+      "type": "Villages",
+      "locations": [
+        {
+          "comment": "Ghotpadi old",
+          "uuid": "5fef9ce9-e655-4dcd-b33a-364441f6a210"
+        },
+        {
+          "comment": "Bhatpar old",
+          "uuid": "f00b816c-0440-441d-bda2-b36eaf9ee09a"
+        },
+        {
+          "comment": "Bodange old",
+          "uuid": "5743f659-2e85-4d34-82a8-8f8a2f79b7b8"
+        },
+        {
+          "comment": "Juwi old",
+          "uuid": "5fef2f17-ccdd-4c05-a583-d35c0931ce78"
+        },
+        {
+          "comment": "Darbha old",
+          "uuid": "295e9e85-9410-4124-8430-d4ce319c1642"
+        },
+        {
+          "comment": "Other Village (Ghotpadi old)",
+          "uuid": "4b1f45ce-e1cb-464d-a967-417240314187"
+        },
+        {
+          "comment": "Gopnar old",
+          "uuid": "c0ff7b06-8163-4925-9617-4b8428be026f"
+        },
+        {
+          "comment": "Hodri old",
+          "uuid": "27ed8635-7bf5-4a6c-8c1a-e5a61cb3036c"
+        },
+        {
+          "comment": "Lashkar old",
+          "uuid": "3e64e3da-166d-47e1-976b-a13c71936f90"
+        },
+        {
+          "comment": "Aldandi old",
+          "uuid": "f1d604c0-b6c9-4472-beb6-ecc397f50f25"
+        },
+        {
+          "comment": "Morodpar old",
+          "uuid": "2f863362-7b60-404f-ac28-534b365a80b0"
+        },
+        {
+          "comment": "Other Village (Gopnar old)",
+          "uuid": "1566059f-2cb9-4332-9ceb-43128bc22da7"
+        },
+        {
+          "comment": "Jinjgaon old",
+          "uuid": "1891fef4-16f2-456a-a4a4-d41260bcf7e0"
+        },
+        {
+          "comment": "Gurnoor old",
+          "uuid": "7d4b7223-f04b-49db-96c7-697b237d1c79"
+        },
+        {
+          "comment": "Marampalli old",
+          "uuid": "7d77da7c-7c06-4edb-8554-a71a5dad3add"
+        },
+        {
+          "comment": "Rela old",
+          "uuid": "ee60c498-e5fd-4e3a-9c48-afe59d7ceb55"
+        },
+        {
+          "comment": "Other Village (Jinjgaon old)",
+          "uuid": "e9cf3153-58ff-4d55-8c28-02f4ac3d612e"
+        },
+        {
+          "comment": "Midadapalli old",
+          "uuid": "5d00452e-2666-43e5-8b17-d1facbb93a42"
+        },
+        {
+          "comment": "Kawande old",
+          "uuid": "b2adef54-2fae-4e02-9c84-9985656e3e5d"
+        },
+        {
+          "comment": "Nelgunda old",
+          "uuid": "f5370a4f-cb49-4231-a47b-77031944408d"
+        },
+        {
+          "comment": "Morometta old",
+          "uuid": "913f034f-d40d-4b1b-adef-da46f0fce026"
+        },
+        {
+          "comment": "Other Village (Midadapalli old)",
+          "uuid": "81240c55-0937-4da0-ab3e-dcf1cef48f39"
+        },
+        {
+          "comment": "Mirgudwancha old",
+          "uuid": "fcc240f4-ef45-4664-8fce-baaf5ee302a8"
+        },
+        {
+          "comment": "Dobhur old",
+          "uuid": "6ffdc1bb-79f6-4d0c-a8d1-625274539cb9"
+        },
+        {
+          "comment": "Puyarkothi old",
+          "uuid": "e7a87d22-8ce9-42ff-8726-5adb02f5fa9c"
+        },
+        {
+          "comment": "Gundurvahi old",
+          "uuid": "ff5765b7-674d-4986-bba4-9b1fd1b5c2fa"
+        },
+        {
+          "comment": "Other Village (Mirgudwancha old)",
+          "uuid": "23140b4d-ef18-444b-b463-7d66eb09cadf"
+        },
+        {
+          "comment": "Pengunda old",
+          "uuid": "fa6d0913-178c-4b97-8623-01f0c0a1d587"
+        },
+        {
+          "comment": "Parainar old",
+          "uuid": "07b87378-c8fe-4c02-9856-7a7c42e38d2b"
+        },
+        {
+          "comment": "Kucher old",
+          "uuid": "7e4892c9-840f-42be-ba3f-d81f7c4a56ae"
+        },
+        {
+          "comment": "Mahakapadi old",
+          "uuid": "909509c3-bb33-40ad-b211-87e1ff95102f"
+        },
+        {
+          "comment": "Gongwada old",
+          "uuid": "40d8e850-aaaf-4b37-9b6f-3539c146f0c2"
+        },
+        {
+          "comment": "Other Village (Pengunda old)",
+          "uuid": "047a5490-ff13-4a81-b71a-df328270b95b"
+        },
+        {
+          "comment": "Mardmallenga old",
+          "uuid": "cbaaf17d-ceec-4bc5-9db5-75b7a75428c2"
+        }
+      ]
     }
   ]
 }

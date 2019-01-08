@@ -55,6 +55,8 @@ create_org: ## Create Lokbiradari Prakalp org and user+privileges
 	psql -U$(su) openchs < create_organisation.sql
 # </create_org>
 
+create_views:
+	psql -U$(su) openchs < create_views.sql
 
 deploy_checklists:
 	$(call _curl,POST,forms,@child/checklistForm.json)
