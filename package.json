@@ -9,10 +9,7 @@
   "license": "AGPL-3.0",
   "scripts": {},
   "dependencies": {
-    "webpack": "^4.13.0"
-  },
-  "devDependencies": {
-    "rules-config": "github:openchs/rules-config#30bc80c",
-    "amazon-cognito-identity-js": "1.28.0"
+    "openchs-idi": "github:openchs/openchs-idi#82b0d97c9f6e4e1ca714ed70e3b0927ab00a8008",
+    "rules-config": "github:openchs/rules-config#c333f0fc4fa99d29e42c8257bf007edef1bbcf41"
   }
 }
