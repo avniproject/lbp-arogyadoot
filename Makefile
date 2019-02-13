@@ -82,7 +82,10 @@ create_users:
 deploy_org_data_live:
 	make auth deploy_org_data poolId=$(STAGING_USER_POOL_ID) clientId=$(STAGING_APP_CLIENT_ID) username=lbp-admin password=$(STAGING_ADMIN_USER_PASSWORD)
 
-_deploy_refdata:
+deploy_subjects:
+	$(call _curl,POST,operationalSubjectTypes,@operationalModules/operationalSubjectTypes.json)
+
+_deploy_refdata: deploy_subjects
 	$(call _curl,POST,concepts,@concepts.json)
 	$(call _curl,POST,forms,@registrationForm.json)
 	$(call _curl,POST,operationalEncounterTypes,@operationalModules/operationalEncounterTypes.json)
