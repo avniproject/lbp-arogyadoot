@@ -37,4 +37,5 @@ echo "[$tstamp] Backup done" >> $log
 #
 # visudo
 # admin ALL=(ALL) NOPASSWD: /home/admin/.cronpgbkp.sh
+# admin ALL=(ALL) NOPASSWD: /home/admin/.cronpgbkpdel.sh
 #
